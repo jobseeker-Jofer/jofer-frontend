@@ -8,42 +8,6 @@
 
 body {
   color: var(--body);
-  margin-top: 20px;
-}
-/* ----------------- SIDEBAR ------------------ */
-#sidebar {
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 70vh;
-  z-index: 999;
-  background: var(--sidebar);
-  color: #fff;
-  transition: all 0.3;
-}
-
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: var(--label);
-}
-
-#sidebar ul {
-  padding: 20px 0;
-}
-
-#sidebar ul li a {
-  padding: 10px;
-  font-size: 1.1em;
-  display: block;
-  color: var(--label);
-  text-decoration: none;
-  transition: all 0.3;
-}
-
-#sidebar ul li a:hover {
-  color: var(--sidebar);
-  background: var(--hover);
 }
 
 /* ----------------- PROFILE ------------------ */
@@ -107,6 +71,9 @@ img {
 .about-list p {
   margin: 0;
   font-size: 15px;
+}
+.about-list .button {
+  margin: 10px auto;
 }
 /* if any */
 /* mark {
