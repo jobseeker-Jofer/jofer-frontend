@@ -1,0 +1,48 @@
+:root {
+  --sidebar: #05004e;
+  --orange: #fd5f00;
+  --hover: #76b39d;
+  --body: #6f8ba4;
+}
+
+body {
+  color: var(--body);
+  margin-top: 20px;
+}
+/* ----------------- SIDEBAR ------------------ */
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70vh;
+  z-index: 999;
+  background: var(--sidebar);
+  color: #fff;
+  transition: all 0.3;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: var(--orange);
+}
+
+#sidebar ul {
+  padding: 20px 0;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: var(--orange);
+  text-decoration: none;
+  transition: all 0.3;
+}
+
+#sidebar ul li a:hover {
+  color: var(--sidebar);
+  background: var(--hover);
+}
+
+/* ----------------- PROFILE ------------------ */
