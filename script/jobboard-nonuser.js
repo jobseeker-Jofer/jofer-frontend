@@ -4,7 +4,7 @@ let ul = document.querySelector(".list-unstyled");
 // let node = "/img/node-list.png";
 // let ibm = "/img/ibm-list.png";
 let images = [
-    "/img/logo/mitramas",
+    "/img/logo/ibm-list",
     "/img/logo/zenius-list.png",
     "/img/logo/node-list.png",
 ];
