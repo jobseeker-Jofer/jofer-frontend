@@ -86,7 +86,7 @@
                 <a class="nav-link" href="#"> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="index.html">
                   <span data-feather="log-out"></span>
                   Sign Out
                 </a>
@@ -143,7 +143,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="firstName"
+                id="title"
                 placeholder="Set job title"
                 value=""
               />
@@ -154,7 +154,7 @@
               <div class="input-group">
                 <textarea
                   name="Description"
-                  id=""
+                  id="desc"
                   cols="60"
                   rows="5"
                 ></textarea>
@@ -180,32 +180,21 @@
                 placeholder="dd-mm-yy"
               />
             </div>
-            <!-- LOCATION -->
+            <!-- City -->
             <div class="col-md-6 mb-3">
-              <label for="country">Country</label>
-              <select class="custom-select d-block w-100" id="country" required>
-                <option value="">Choose...</option>
-                <option>United States</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="state">State</label>
-              <select class="custom-select d-block w-100" id="state" required>
-                <option value="">Choose...</option>
-                <option>California</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
+              <label for="birthday">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="Ex: Bandung"
+              />
             </div>
 
             <hr class="mb-4" />
             <!-- BUTTON -->
             <div class="col-md-6 mb-3">
-              <button class="btn btn-primary" type="button">
+              <button class="btn btn-primary" type="button" id="button">
                 Save profile
               </button>
             </div>
@@ -214,8 +203,6 @@
       </div>
     </div>
 
-    <!-- BACK-END -->
-    <script src="/script/index.js"></script>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -231,6 +218,11 @@
     <script src="../assets/dist/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!-- ALERT
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
+    <!-- BACK-END -->
     <script src="/script/sidebar.js"></script>
+    <script src="/script/profile.js"></script>
   </body>
 </html>

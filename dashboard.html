@@ -62,19 +62,19 @@
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="/dashboard.html">
+                <a class="nav-link active" id="dashboard" href="/dashboard.html">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/profile.html">
+              <!-- <li class="nav-item">
+                <a class="nav-link" id="profile" href="/profile.html">
                   <span data-feather="user"></span>
                   Profile <span class="sr-only">(current)</span>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="/jobboard.html">
+                <a class="nav-link" id="jobboard" href="/jobboard.html">
                   <span data-feather="search"></span>
                   Job Search
                 </a>
@@ -88,7 +88,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="index.html">
                   <span data-feather="log-out"></span>
                   Sign Out
                 </a>
@@ -98,7 +98,7 @@
             <h6
               class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
             >
-              <span>Saved Jobs</span>
+              <!-- <span>Saved Jobs</span>
               <a
                 class="d-flex align-items-center text-muted"
                 href="#"
@@ -130,7 +130,7 @@
                   Year-end sale
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </nav>
         <!-- END SIDEBAR -->
@@ -138,29 +138,34 @@
         <!-- PROFILE -->
         <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
           <div class="about-text go-to">
-            <h3 class="dark-color">About Me</h3>
-            <h6 class="theme-color lead">job</h6>
-            <p>lalalalalalal</p>
+            <h3 class="dark-color" id="name">Resha Puspita</h3>
+            <h6 class="theme-color lead" id="title">Web Developer</h6>
+            <p id="desc">Aku seorang kapiten</p>
+            <h6 class="theme-color" >
+              <span data-feather="phone"></span>
+              <span id="contact"></span>
+            </h6>
+              
+              
             <div class="row about-list">
               <div class="col-md-6">
-                  <div class="media">
+                  <div class="media" >
                     <label>Birthday</label>
-                    <p>30th March 1998</p>
+                    <p id="birthday">30th March 1998</p>
                   </div>
-                  <div class="media">
-                    <label>Age</label>
-                    <p>22</p>
-                  </div>
-                  <div class="media">
+                  <div class="media" >
                     <label>Residence</label>
-                    <p>Indonesia</p>
+                    <p id="residence">Indonesia</p>
                   </div>
-                  <div class="media">
+                  <div class="media" >
                     <label>E-mail</label>
-                    <p>adhadi@gmail.com</p>
+                    <p id="email">adhadi@gmail.com</p>
                   </div>
-                  <div class="button">
-                    <input type="button" class="btn btn-info" value="Edit">
+                  <div class="media" >
+                    <label>Skills</label>
+                    <ul id="skills">
+                      <!-- list skill here -->
+                    </ul>
                   </div>
                 </div>
             </div>
@@ -170,7 +175,8 @@
     </div>
 
     <!-- BACK-END -->
-    <script src="/script/index.js"></script>
+    <script src="/script/sidebar.js"></script>
+    <script src="/script/dashboard.js"></script>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
