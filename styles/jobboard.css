@@ -3,7 +3,7 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background: url(/img/jumbotron.png);
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -18,10 +18,12 @@
 
 .jumbotron h1 {
   font-weight: 300;
+  visibility: hidden;
 }
 
 .jumbotron .container {
   max-width: 40rem;
+  visibility: hidden;
 }
 
 footer {
@@ -69,4 +71,9 @@ footer p {
   .search-sec {
     background: #1a4668;
   }
+}
+/* ----------------- JOB LIST ------------------ */
+.title {
+  font-size: 20px;
+  text-decoration: none !important;
 }
