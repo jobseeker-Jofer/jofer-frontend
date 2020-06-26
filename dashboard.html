@@ -13,45 +13,45 @@
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
     />
-    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
     <!-- FRONT CSS -->
     <link rel="stylesheet" href="/styles/sidebar.css" />
-    <link rel="stylesheet" href="/styles/profile.css" />
+    <link rel="stylesheet" href="/styles/dashboard.css">
   </head>
   <body>
     <!-- NavBar here -->
     <nav
-      class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+    class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+  >
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
+      >Company name</a
     >
-      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
-        >Company name</a
-      >
-      <button
-        class="navbar-toggler position-absolute d-md-none collapsed"
-        type="button"
-        data-toggle="collapse"
-        data-target="#sidebarMenu"
-        aria-controls="sidebarMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <input
-        class="form-control form-control-dark w-100"
-        type="text"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- END NAVBAR -->
+    <button
+      class="navbar-toggler position-absolute d-md-none collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#sidebarMenu"
+      aria-controls="sidebarMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <input
+      class="form-control form-control-dark w-100"
+      type="text"
+      placeholder="Search"
+      aria-label="Search"
+    />
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- END NAVBAR -->
 
-    <!-- MAIN PAGE -->
+  <!-- MAIN PAGE -->
     <div class="container-fluid">
       <div class="row">
         <!-- Sidebar here -->
@@ -62,28 +62,30 @@
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="/dashboard.html">
+                <a class="nav-link active" id="dashboard" href="/dashboard.html">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/profile.html">
+              <!-- <li class="nav-item">
+                <a class="nav-link" id="profile" href="/profile.html">
                   <span data-feather="user"></span>
                   Profile <span class="sr-only">(current)</span>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="/jobboard.html">
+                <a class="nav-link" id="jobboard" href="/jobboard.html">
                   <span data-feather="search"></span>
                   Job Search
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> </a>
+                <a class="nav-link" href="#">
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> </a>
+                <a class="nav-link" href="#">
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html">
@@ -96,7 +98,7 @@
             <h6
               class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
             >
-              <span>Saved Jobs</span>
+              <!-- <span>Saved Jobs</span>
               <a
                 class="d-flex align-items-center text-muted"
                 href="#"
@@ -128,81 +130,53 @@
                   Year-end sale
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </nav>
         <!-- END SIDEBAR -->
 
-        <!-- EDIT PROFILE -->
+        <!-- PROFILE -->
         <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
-          <h4 class="mb-3">Profile</h4>
-          <form class="needs-validation" novalidate>
-            <!-- JOB TITLE -->
-            <div class="col-md-6">
-              <label for="firstName">Title</label>
-              <input
-                type="text"
-                class="form-control"
-                id="title"
-                placeholder="Set job title"
-                value=""
-              />
+          <div class="about-text go-to">
+            <h3 class="dark-color" id="name">Resha Puspita</h3>
+            <h6 class="theme-color lead" id="title">Web Developer</h6>
+            <p id="desc">Aku seorang kapiten</p>
+            <h6 class="theme-color" >
+              <span data-feather="phone"></span>
+              <span id="contact"></span>
+            </h6>
+              
+              
+            <div class="row about-list">
+              <div class="col-md-6">
+                  <div class="media" >
+                    <label>Birthday</label>
+                    <p id="birthday">30th March 1998</p>
+                  </div>
+                  <div class="media" >
+                    <label>Residence</label>
+                    <p id="residence">Indonesia</p>
+                  </div>
+                  <div class="media" >
+                    <label>E-mail</label>
+                    <p id="email">adhadi@gmail.com</p>
+                  </div>
+                  <div class="media" >
+                    <label>Skills</label>
+                    <ul id="skills">
+                      <!-- list skill here -->
+                    </ul>
+                  </div>
+                </div>
             </div>
-            <!-- DESCRIPTION -->
-            <div class="col-md-6 mb-3">
-              <label for="description">Description</label>
-              <div class="input-group">
-                <textarea
-                  name="Description"
-                  id="desc"
-                  cols="60"
-                  rows="5"
-                ></textarea>
-              </div>
-            </div>
-            <!-- CONTACT -->
-            <div class="col-md-6 mb-3">
-              <label for="contact">Contact</label>
-              <input
-                type="text"
-                class="form-control"
-                id="contact"
-                placeholder="Phone number"
-              />
-            </div>
-            <!-- BIRTHDAY -->
-            <div class="col-md-6 mb-3">
-              <label for="birthday">Birth Day</label>
-              <input
-                type="text"
-                class="form-control"
-                id="birthday"
-                placeholder="dd-mm-yy"
-              />
-            </div>
-            <!-- City -->
-            <div class="col-md-6 mb-3">
-              <label for="birthday">City</label>
-              <input
-                type="text"
-                class="form-control"
-                id="city"
-                placeholder="Ex: Bandung"
-              />
-            </div>
-
-            <hr class="mb-4" />
-            <!-- BUTTON -->
-            <div class="col-md-6 mb-3">
-              <button class="btn btn-primary" type="button" id="button">
-                Save profile
-              </button>
-            </div>
-          </form>
         </main>
+        <!-- END PROFILE -->
       </div>
     </div>
 
+    <!-- BACK-END -->
+    <script src="/script/sidebar.js"></script>
+    <script src="/script/dashboard.js"></script>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -218,11 +192,6 @@
     <script src="../assets/dist/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <!-- ALERT
-    <script src="sweetalert2.all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
-    <!-- BACK-END -->
     <script src="/script/sidebar.js"></script>
-    <script src="/script/profile.js"></script>
   </body>
 </html>
