@@ -24,3 +24,18 @@ function validate() {
         }
     }
 }
+
+// register validasi 
+function validasi() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var createPassword = document.getElementById("createPassword").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    if (username != "" && email != "" && createPassword != "" && confirmPassword != "") {
+        alert("Login successfully");
+        window.location = "login.html";
+        return true;
+    } else {
+        alert('Anda harus mengisi data dengan lengkap !');
+    }
+}
