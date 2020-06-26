@@ -8,7 +8,8 @@ let residence = document.getElementById("residence");
 let skills = document.getElementById("skills");
 
 // --------------- FETCH ----------------
-let endpoint = "https://5ef168ca1faf160016b4d5b5.mockapi.io/api/users/1";
+let id = 1;
+let endpoint = `https://5ef168ca1faf160016b4d5b5.mockapi.io/api/users/${id}`;
 let options = {
   method: "GET",
 };

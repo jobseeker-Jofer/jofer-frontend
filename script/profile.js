@@ -2,7 +2,8 @@
 let saveBtn = document.getElementById("button");
 
 // --------------- FETCH ----------------
-let endpoint = "https://5ef168ca1faf160016b4d5b5.mockapi.io/api/users/1";
+let id = 1;
+let endpoint = `https://5ef168ca1faf160016b4d5b5.mockapi.io/api/users/${id}`;
 
 // --------------- FUNCTION ----------------
 async function saveProfile() {
@@ -23,7 +24,7 @@ async function saveProfile() {
     console.log(userData);
 
     let options = {
-      method: "POST",
+      method: "PUT",
       headers: {
         "Content-type": "application/json",
       },
