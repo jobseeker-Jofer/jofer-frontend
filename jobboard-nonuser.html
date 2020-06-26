@@ -13,68 +13,68 @@
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
     />
-    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet" />
     <!-- FRONT CSS -->
     <link rel="stylesheet" href="/styles/sidebar.css" />
-    <link rel="stylesheet" href="/styles/dashboard.css">
+    <link rel="stylesheet" href="/styles/jobboard-nonuser.css" />
   </head>
   <body>
     <!-- NavBar here -->
     <nav
-    class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
-  >
-    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
-      >Company name</a
+      class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
     >
-    <button
-      class="navbar-toggler position-absolute d-md-none collapsed"
-      type="button"
-      data-toggle="collapse"
-      data-target="#sidebarMenu"
-      aria-controls="sidebarMenu"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <input
-      class="form-control form-control-dark w-100"
-      type="text"
-      placeholder="Search"
-      aria-label="Search"
-    />
-    <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
-        <a class="nav-link" href="#">Sign out</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- END NAVBAR -->
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
+        >Company name</a
+      >
+      <button
+        class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <input
+        class="form-control form-control-dark w-100"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
 
-  <!-- MAIN PAGE -->
+    <!-- MAIN PAGE -->
     <div class="container-fluid">
-      <div class="row">
-        <!-- Sidebar here -->
-        <nav
+      <!-- <div class="row"> -->
+      <!-- Sidebar here -->
+      <!-- <nav
           id="sidebarMenu"
-          class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse"
+          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
         >
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" id="dashboard" href="/dashboard.html">
+                <a class="nav-link active" href="/dashboard.html">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" id="profile" href="/profile.html">
+              </li> -->
+      <!-- <li class="nav-item">
+                <a class="nav-link" href="/profile.html">
                   <span data-feather="user"></span>
                   Profile <span class="sr-only">(current)</span>
                 </a>
               </li> -->
-              <li class="nav-item">
-                <a class="nav-link" id="jobboard" href="/jobboard.html">
+      <!-- <li class="nav-item">
+                <a class="nav-link" href="/jobboard.html">
                   <span data-feather="search"></span>
                   Job Board
                 </a>
@@ -97,8 +97,8 @@
 
             <h6
               class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
-            >
-              <!-- <span>Saved Jobs</span>
+            > -->
+      <!-- <span>Saved Jobs</span>
               <a
                 class="d-flex align-items-center text-muted"
                 href="#"
@@ -131,52 +131,66 @@
                 </a>
               </li>
             </ul> -->
+      <!-- </div>
+        </nav> -->
+      <!-- END SIDEBAR -->
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <!-- JOB SEARCH: JUMBOTRON -->
+        <section class="jumbotron text-center">
+          <div class="container">
+            <h1>Album example</h1>
+            <p class="lead text-muted">
+              Something short and leading about the collection below—its
+              contents, the creator, etc. Make it short and sweet, but not too
+              short so folks don’t simply skip over it entirely.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p>
           </div>
-        </nav>
-        <!-- END SIDEBAR -->
-
-        <!-- PROFILE -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
-          <div class="about-text go-to">
-            <h3 class="dark-color" id="name">Resha Puspita</h3>
-            <h6 class="theme-color lead" id="title">Web Developer</h6>
-            <p id="desc">Aku seorang kapiten</p>
-            <h6 class="theme-color" >
-              <span data-feather="phone"></span>
-              <span id="contact"></span>
-            </h6>
-              
-              
-            <div class="row about-list">
-              <div class="col-md-6">
-                  <div class="media" >
-                    <label>Birthday</label>
-                    <p id="birthday">30th March 1998</p>
-                  </div>
-                  <div class="media" >
-                    <label>Residence</label>
-                    <p id="residence">Indonesia</p>
-                  </div>
-                  <div class="media" >
-                    <label>E-mail</label>
-                    <p id="email">adhadi@gmail.com</p>
-                  </div>
-                  <div class="media" >
-                    <label>Skills</label>
-                    <ul id="skills">
-                      <!-- list skill here -->
-                    </ul>
-                  </div>
+        </section>
+        <!-- JOB SEARCH: SEARCH BAR -->
+        <section class="search-sec">
+          <div class="container">
+            <form action="#" method="post" novalidate="novalidate">
+              <div class="row">
+                <div class="col-lg-8 col-md-3 col-sm-12 p-0">
+                  <input
+                    type="text"
+                    class="form-control search-slt"
+                    placeholder="Enter Job Title"
+                  />
                 </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                  <button
+                    type="button"
+                    class="btn btn-danger wrn-btn"
+                    id="search"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- JOB SEARCH: JOB LIST -->
+        <div class="album py-5 bg-light">
+          <div class="container">
+            <div class="col">
+              <div class="col-md-10">
+                <ul class="list-unstyled"></ul>
+              </div>
             </div>
-        </main>
-        <!-- END PROFILE -->
-      </div>
+          </div>
+        </div>
+      </main>
     </div>
+    <!-- BACK END -->
+    <script src="/script/jobboard-nonuser.js"></script>
 
-    <!-- BACK-END -->
-    <script src="/script/sidebar.js"></script>
-    <script src="/script/dashboard.js"></script>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
