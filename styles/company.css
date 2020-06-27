@@ -26,8 +26,6 @@
     height: 250px;
 }
 
-
-}
 .section {
     margin-bottom: 70px;
     text-align: justify;
@@ -38,10 +36,10 @@
 .sec- {
     float: right;
 }
-h2 {
+.section h2 {
     font-size: 28px;
-    color: #3388BB;
-    border-bottom: 3px solid #33388BB;
+    color: #3388bb;
+    border-bottom: 3px solid #33388b;
 }
 a {
     color: blue;
