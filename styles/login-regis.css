@@ -88,15 +88,15 @@ section .container .user .formBx form input {
     font-weight: 300;
 }
 
-section .container .user .formBx form input[type="button"] {
-  min-width: 100px;
-  background: #677eff;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: 0.5s;
+section .container .user .formBx form input[type="submit"] {
+    min-width: 100px;
+    background: #677eff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
 }
 
 section .container .user .formBx form .signup {
