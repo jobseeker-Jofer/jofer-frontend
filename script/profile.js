@@ -1,10 +1,6 @@
 // --------------- ELEMENTS ----------------
 let saveBtn = document.getElementById("button");
 
-// --------------- FETCH ----------------
-let id = 1;
-let endpoint = `https://5ef168ca1faf160016b4d5b5.mockapi.io/api/users/${id}`;
-
 // --------------- FUNCTION ----------------
 async function saveProfile() {
   try {
@@ -30,7 +26,12 @@ async function saveProfile() {
       },
       body: JSON.stringify(userData),
     };
+    let user = JSON.parse(localStorage.getItem("user"));
+    console.log(user);
 
+    let id = user.id;
+    console.log(id);
+    let endpoint = `https://5ef168ca1faf160016b4d5b5.mockapi.io/api/users/${id}`;
     let response = await fetch(endpoint, options);
     console.log(response.json());
   } catch (error) {
@@ -48,5 +49,5 @@ saveBtn.addEventListener("click", function () {
   //     timer: 1500,
   //   });
   saveProfile();
-  alert("gfd");
+  alert("Data Succesfully Saved!");
 });
