@@ -1,19 +1,14 @@
 // bawaan template
 (function () {
-  "use strict";
+    "use strict";
 
-  feather.replace();
+    feather.replace();
 })();
 
 // // SIDEBAR
-// let dashboard = document.getElementById("dashboard");
-// let profile = document.getElementById("profile");
-// let jobBoard = document.getElementById("jobboard");
-// let items = document.querySelector(".nav-item a");
-// // -------- FUNCTION ----------
-// active = (element) => {
-//   items.removeClass("active");
-//   element.addClass("active");
-// };
-// // -------- EVENT LISTENER ----------
-// dashboard.addEventListener("click", active(dashboard));
+let signout = document.getElementById("signout");
+// -------- EVENT LISTENER ----------
+signout.addEventListener("click", function () {
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+});
