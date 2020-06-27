@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/login.css">
-    <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <title>Sign-in | Jofer: Offering You JOB!</title>
+  </head>
 
-<body>
+  <body>
     <!-- start login  -->
     <section>
-        <div class="container">
-            <div class="user signinBx" id="signin">
-                <div class="imgBx"><img src="https://blush.ly/D_pgryrJp/p?bg=66b8da" alt=""></div>
-                <div class="formBx">
-                    <form>
-                        <h2>Sign In</h2>
-                        <input type="text" name="" id="username" placeholder="Username">
-                        <input type="password" name="" id="password" placeholder="Password">
-                        <!-- code ian -->
-                        <!-- <input type="submit" name="" id="submit" onclick="validate()" value="Login"> -->
-                        <a href="./dashboard.html"><button type="button" class="btn
-                            btn-primary btn-lg">Login</button></a>
-                        <p class="signup">Don't have an account ?
-                            <a href="regis.html" onclick="toggleForm();">Sign Up</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="user signinBx" id="signin">
+          <div class="imgBx">
+            <img src="https://blush.ly/D_pgryrJp/p?bg=66b8da" alt="" />
+          </div>
+          <div class="formBx">
+            <form>
+              <h2>Sign In</h2>
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <input type="button" name="" id="button" value="Login" />
+              <p class="signup">
+                Don't have an account ?
+                <a href="regis.html">Sign Up</a>
+              </p>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End login  -->
-    <script src="/script/login-regis.js"></script>
-</body>
-
+    <script src="/script/login.js"></script>
+  </body>
 </html>
