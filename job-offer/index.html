@@ -1,97 +1,120 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
+        <link
+            href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <!-- CSS reset -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Resource style -->
-    <script src="js/modernizr.js"></script>
-    <!-- Modernizr -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Resource style -->
+        <script src="js/modernizr.js"></script>
+        <!-- Modernizr -->
 
-    <title>Expandable Image Gallery | Codyhouse</title>
-  </head>
-  <body>
-    <header>
-      <h1>Expandable Image Gallery</h1>
-    </header>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <title>Job Offer | Jofer: Ofeering You Job!</title>
+    </head>
+    <body>
+        <div style="width: 100%; color: antiquewhite;">
+            <button type="button" id="logout" onclick="logout()"">logout</button>
+        </div>
+        <header>
+            <h1>Expandable Image Gallery</h1>
+        </header>
 
-    <section class="cd-single-item">
-      <div class="cd-slider-wrapper">
-        <ul class="cd-slider">
-          <li class="selected"><img src="/1.png" alt="Product Image 1" /></li>
-        </ul>
-        <!-- cd-slider -->
+        <section class="cd-single-item">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected">
+                        <img src="/job-offer/1.png" alt="Product Image 1" />
+                    </li>
+                </ul>
+                <!-- cd-slider -->
 
-        <a href="#0" class="cd-close">Close</a>
-      </div>
-      <!-- cd-slider-wrapper -->
+                <a href="#0" class="cd-close">Close</a>
+            </div>
+            <!-- cd-slider-wrapper -->
 
-      <div class="cd-item-info">
-        <h2>Job Description</h2>
+            <div class="cd-item-info">
+                <h2>Job Description</h2>
 
-        <p>
-          Here in Mitramas Infosys Global, you will be exposed to work on
-          software across a diverse platform of technologies as well as a
-          variety of industries within our portfolios. We are looking for
-          talents with high tenacity in solving problems, exceptional passion
-          for technologies, and a great willingness to learn and adapt to
-          ever-changing environments to join our team. You are expected to be
-          able to:
-        </p>
-        <li>
-          Convert given high-level software design to low-level software design
-        </li>
-        <li>
-          Complete documentation and procedures for testing and maintenance
-          Implement unit tests and functional tests for their tasks
-        </li>
-        <li>
-          Write code, perform testing and debugging of applications using
-          current programming languages and technologies
-        </li>
+                <p>
+                    Here in Mitramas Infosys Global, you will be exposed to work
+                    on software across a diverse platform of technologies as
+                    well as a variety of industries within our portfolios. We
+                    are looking for talents with high tenacity in solving
+                    problems, exceptional passion for technologies, and a great
+                    willingness to learn and adapt to ever-changing environments
+                    to join our team. You are expected to be able to:
+                </p>
+                <li>
+                    Convert given high-level software design to low-level
+                    software design
+                </li>
+                <li>
+                    Complete documentation and procedures for testing and
+                    maintenance Implement unit tests and functional tests for
+                    their tasks
+                </li>
+                <li>
+                    Write code, perform testing and debugging of applications
+                    using current programming languages and technologies
+                </li>
 
-        <h2>Minimum Qualification</h2>
-        <li>
-          Experience using PHP and web technologies (CI, Laravel, Symphony, Yii,
-          jQuery, NodeJS, and so on)
-        </li>
-        <li>Deep knowledge of software development life cycle</li>
-        <li>
-          Having professional attitudes & desire to pursue top code quality
-        </li>
-        <li>
-          Ability to understand business requirements and translate them into
-          technical requirements
-        </li>
+                <h2>Minimum Qualification</h2>
+                <li>
+                    Experience using PHP and web technologies (CI, Laravel,
+                    Symphony, Yii, jQuery, NodeJS, and so on)
+                </li>
+                <li>Deep knowledge of software development life cycle</li>
+                <li>
+                    Having professional attitudes & desire to pursue top code
+                    quality
+                </li>
+                <li>
+                    Ability to understand business requirements and translate
+                    them into technical requirements
+                </li>
 
-        <button class="add-to-cart">Add to cart</button>
-      </div>
-      <!-- cd-item-info -->
-    </section>
-    <!-- cd-single-item -->
+                <button class="apply" id="button" onclick="myFunction()">
+                    Apply Job
+                </button>
+            </div>
+            <!-- cd-item-info -->
+        </section>
+        <!-- cd-single-item -->
 
-    <section class="cd-content">
-      <p>
-        <strong>Office Address</strong>
-      </p>
-      <p>
-        Jalan Tebet Raya No.42, RT.3/RW.2, East Tebet, South Jakarta City,
-        Jakarta, Indonesia
-      </p>
-    </section>
+        <section class="cd-content">
+            <p>
+                <strong>Office Address</strong>
+            </p>
+            <p>
+                Jalan Tebet Raya No.42, RT.3/RW.2, East Tebet, South Jakarta
+                City, Jakarta, Indonesia
+            </p>
+        </section>
 
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/jquery.mobile.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Resource jQuery -->
-  </body>
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Resource jQuery -->
+
+        <!-- Resource jQuery -->
+        <script src="/script/company.js">
+            $(`#button`).click(function() {
+                swal({
+                    title: "this is title",
+                    text: "text here",
+                    icon: 'succes',
+                    button: 'close'
+                });
+            });
+        </script>
+    </body>
 </html>
