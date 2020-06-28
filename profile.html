@@ -7,7 +7,7 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <title>Jofer</title>
-        <link rel="stylesheet" href="/styles/profile.css" />
+
         <!-- BOOTSTRAP -->
         <link
             rel="canonical"
@@ -54,16 +54,16 @@
         <!-- MAIN PAGE -->
         <div class="container-fluid">
             <div class="row">
-                <!-- Sidebar here -->
                 <nav
                     id="sidebarMenu"
-                    class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse"
+                    class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
                 >
                     <div class="sidebar-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link"
+                                    id="dashboard"
                                     href="/dashboard.html"
                                 >
                                     <span data-feather="home"></span>
@@ -72,16 +72,24 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/profile.html">
+                                <a
+                                    class="nav-link active"
+                                    id="profile"
+                                    href="/profile.html"
+                                >
                                     <span data-feather="user"></span>
                                     Profile
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/jobboard.html">
+                                <a
+                                    class="nav-link"
+                                    id="jobboard"
+                                    href="/jobboard.html"
+                                >
                                     <span data-feather="search"></span>
-                                    Job Search
+                                    Job Board
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -97,49 +105,12 @@
                                 </a>
                             </li>
                         </ul>
-
-                        <h6
-                            class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
-                        >
-                            <span>Saved Jobs</span>
-                            <a
-                                class="d-flex align-items-center text-muted"
-                                href="#"
-                                aria-label="Add a new report"
-                            ></a>
-                        </h6>
-                        <ul class="nav flex-column mb-2">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                                    Current month
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                                    Last quarter
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                                    Social engagement
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                                    Year-end sale
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </nav>
                 <!-- END SIDEBAR -->
 
                 <!-- EDIT PROFILE -->
-                <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                     <h4 class="mb-3">Profile</h4>
                     <form class="needs-validation" novalidate>
                         <!-- JOB TITLE -->
@@ -211,7 +182,6 @@
                 </main>
             </div>
         </div>
-
         <!-- bootstrap -->
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
