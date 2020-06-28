@@ -33,6 +33,18 @@ h1 {
     text-align: center;
     margin-left: 1px;
     font-weight: bolder;
+    color: black;
+}
+
+.h227 {
+    text-align: center;
+    margin-left: 1px;
+    font-weight: bolder;
+    color: white;
+}
+
+.h11 {
+    color: white
 }
 
 .h223 {
@@ -40,6 +52,7 @@ h1 {
     margin-left: 1px;
     font-weight: bolder;
     margin-top: 200px;
+    color: white;
 }
 
 .h224 {
@@ -57,7 +70,6 @@ h1 {
 
 .logo-empolye-2 {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -93,7 +105,8 @@ p {
     width: 100%;
     transition: background 0.6s ease-in;
     z-index: 99999;
-    background-color: #709fb0;
+    background-color: #15243c;
+    ;
 }
 
 .navbar .navbar-brand {
@@ -260,7 +273,8 @@ p {
     padding: 50px;
     height: 300px;
     background-size: cover;
-    background: #a0c1b8;
+    background: #294572;
+    color: white;
 }
 
 .content2 {
@@ -272,14 +286,16 @@ p {
 .content3 {
     padding: 100px;
     height: 1000px;
-    background: #a0c1b8;
+    background: #1d3152;
+    color: white;
 }
 
 .content4 {
     padding: 100px;
     height: 750px;
     background-size: cover;
-    background: #a0c1b8;
+    background: #1d3152;
+    color: white;
 }
 
 .content5 {
@@ -292,7 +308,8 @@ p {
     padding: 100px;
     height: 400px;
     background-size: cover;
-    background: #a0c1b8;
+    background: #1d3152;
+    color: white;
 }
 
 .content7 {
@@ -337,8 +354,8 @@ p {
 
 .icons-2 {
     margin-top: 100px;
-    width: 80%;
-    margin-left: 37px;
+    width: 100%;
+    padding-left: 60px;
 }
 
 .title-explorer {
@@ -368,7 +385,7 @@ hr {
 }
 
 .footer {
-    background: #709fb0;
+    background: #15243c;
     color: white;
     position: relative;
 }
@@ -892,7 +909,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .navbar-brand {
         margin-left: 20px;
     }
@@ -907,7 +924,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 767px) {
     .banner {
         padding: 0 150px;
     }
@@ -935,7 +952,6 @@ hr {
         -webkit-transform: scaleX(0);
         -ms-transform: scaleX(0);
         transform: scaleX(0);
-        transition: transform 0.1s ease-in;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover::after {
@@ -945,7 +961,7 @@ hr {
     }
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
 
     .img1 {
@@ -971,59 +987,66 @@ hr {
         margin-left: 10px;
     }
 
-    .icon {
-        margin-top: 50px;
-    }
-
     .jofer {
-        padding: 30px;
+        margin-left: 200px;
         display: flex;
         flex-direction: column;
     }
 
     .content {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
     }
 
     .content1 {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
-        background: #a0c1b8;
+        background: #1d3152;
+        color: white;
         width: 100%;
+        height: 2200px;
     }
 
     .content2 {
-        padding: 100px;
+        padding-top: 10px;
         background-size: cover;
+        height: 4000px;
+        color: black;
     }
 
     .content3 {
-        padding: 100px;
-        background: #a0c1b8;
+        padding-top: 100px;
+        background: #1d3152;
+        color: white;
+        height: 1500px;
     }
 
     .content4 {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
-        background: #a0c1b8;
+        background: #1d3152;
+        color: white;
+        height: 1700px;
     }
 
     .content5 {
-        padding: 100px;
-
+        padding-top: 100px;
+        height: 2500px;
         background-size: cover;
     }
 
     .content6 {
-        padding: 100px;
+        padding-top: 20px;
         background-size: cover;
-        background: #a0c1b8;
+        background: #1d3152;
+        color: white;
+        height: 600px;
     }
 
     .content7 {
-        padding: 100px;
+        padding-top: 10px;
         background-size: cover;
+        height: 2600px;
     }
 
     .container-heading {
@@ -1037,60 +1060,15 @@ hr {
         flex-direction: column;
     }
 
-
-    .search {
-        width: 100%;
-        position: relative;
-        display: flex;
-    }
-
-    .searchTerm {
-        width: 100%;
-        border: 3px solid #709fb0;
-        padding: 5px;
-        height: 40px;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        color: #9dbfaf;
-    }
-
-    .searchTerms {
-        width: 100%;
-        border: 3px solid #709fb0;
-        padding: 5px;
-        height: 40px;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        color: #9dbfaf;
-        margin-left: 10px;
-    }
-
-    .searchTerm:focus {
-        color: black;
-    }
-
-    .searchButton {
-        width: 40px;
-        height: 40px;
-        border: 1px solid #709fb0;
-        background: #709fb0;
-        text-align: center;
-        color: #fff;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        font-size: 20px;
-        margin-left: 10px;
-    }
-
     .logo-empolye {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding-left: 50px;
-    } */
+        padding-left: -50px;
+    }
 
-/*Resize the wrap to see the search bar change!*/
-/* .wrap {
+    /*Resize the wrap to see the search bar change!*/
+    .wrap {
         width: 30%;
         position: absolute;
         margin-top: 200px;
@@ -1113,8 +1091,7 @@ hr {
 
     .icons-2 {
         margin-top: 100px;
-        width: 80%;
-        margin-left: 37px;
+        width: 100%
     }
 
     .title-explorer {
@@ -1134,7 +1111,6 @@ hr {
     }
 
     .aboutss {
-        padding-left: 90px;
         display: flex;
         flex-direction: row;
     }
@@ -1160,17 +1136,17 @@ hr {
     }
 
     .profile-card-5 {
-        margin-top: 100px;
+        margin-top: -300px;
         width: 100%;
         justify-content: center;
+        margin-left: 100px;
     }
 
     .profile-card-5 .card-img-block {
         width: 91%;
         margin: 0 auto;
         position: relative;
-        top: -45px;
-
+        margin-bottom: 120px;
     }
 
     .profile-card-5 .card-img-block img {
@@ -1198,4 +1174,16 @@ hr {
         padding-left: 10px;
         padding-right: 10px;
     }
-} */
+
+    .cards {
+        margin-top: 350px;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .logo-empolye-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
