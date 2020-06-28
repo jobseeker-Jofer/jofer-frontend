@@ -32,7 +32,7 @@ function validasi() {
     var createPassword = document.getElementById("createPassword").value;
     var confirmPassword = document.getElementById("confirmPassword").value;
     if (username != "" && email != "" && createPassword != "" && confirmPassword != "") {
-        alert("Login successfully");
+        alert("register successfully");
         window.location = "login.html";
         return true;
     } else {
