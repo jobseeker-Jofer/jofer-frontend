@@ -57,7 +57,6 @@ h1 {
 
 .logo-empolye-2 {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -337,8 +336,8 @@ p {
 
 .icons-2 {
     margin-top: 100px;
-    width: 80%;
-    margin-left: 37px;
+    width: 100%;
+    padding-left: 60px;
 }
 
 .title-explorer {
@@ -892,7 +891,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .navbar-brand {
         margin-left: 20px;
     }
@@ -907,7 +906,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 767px) {
     .banner {
         padding: 0 150px;
     }
@@ -935,7 +934,6 @@ hr {
         -webkit-transform: scaleX(0);
         -ms-transform: scaleX(0);
         transform: scaleX(0);
-        transition: transform 0.1s ease-in;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover::after {
@@ -945,7 +943,7 @@ hr {
     }
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
 
     .img1 {
@@ -982,47 +980,47 @@ hr {
     }
 
     .content {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
     }
 
     .content1 {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
         background: #a0c1b8;
         width: 100%;
     }
 
     .content2 {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
     }
 
     .content3 {
-        padding: 100px;
+        padding-top: 100px;
         background: #a0c1b8;
     }
 
     .content4 {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
         background: #a0c1b8;
     }
 
     .content5 {
-        padding: 100px;
+        padding-top: 100px;
 
         background-size: cover;
     }
 
     .content6 {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
         background: #a0c1b8;
     }
 
     .content7 {
-        padding: 100px;
+        padding-top: 100px;
         background-size: cover;
     }
 
@@ -1087,10 +1085,10 @@ hr {
         flex-wrap: wrap;
         flex-direction: row;
         padding-left: 50px;
-    } */
+    }
 
-/*Resize the wrap to see the search bar change!*/
-/* .wrap {
+    /*Resize the wrap to see the search bar change!*/
+    .wrap {
         width: 30%;
         position: absolute;
         margin-top: 200px;
@@ -1113,8 +1111,7 @@ hr {
 
     .icons-2 {
         margin-top: 100px;
-        width: 80%;
-        margin-left: 37px;
+        width: 50%
     }
 
     .title-explorer {
@@ -1198,4 +1195,10 @@ hr {
         padding-left: 10px;
         padding-right: 10px;
     }
-} */
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
