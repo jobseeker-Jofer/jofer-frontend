@@ -1,12 +1,27 @@
 :root {
-    --sidebar: #ffffff;
-    --hover: #76b39d;
-    --body: #6f8ba4;
-    --profile: #f5f5f5;
-    --label: #20247b;
+    --c1: #e0e2df;
+    --c2: #143c61;
+    --c3: #61b4d9;
+    --c4: #222223;
+    --c5: #f2221c;
+    --c6: #4304a3;
+    --c7: #5c77c7;
+    --c8: #768086;
+    --c9: #5f5861;
+    --c10: #2b0b5b;
+    --c11: #15243c;
 }
 
 /* ----------------- PROFILE CUSTOM------------------ */
+ul {
+    color: var(--c2);
+}
+.data-user,
+#name,
+#title,
+#desc {
+    font-family: "Noto Sans JP", sans-serif;
+}
 #name {
     margin-bottom: 50px;
 }
@@ -54,13 +69,18 @@
     padding: 30px;
 }
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: var(--c1);
 }
 .text-center {
     text-align: center !important;
 }
+.team-single-img {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
 img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -80,67 +100,4 @@ img {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
-}
-
-.text-sky {
-    color: #02c2c7;
-}
-
-.text-orange {
-    color: #e95601;
-}
-
-.text-green {
-    color: #5bbd2a;
-}
-
-.text-yellow {
-    color: #f0d001;
-}
-
-.text-pink {
-    color: #ff48a4;
-}
-
-.text-purple {
-    color: #9d60ff;
-}
-
-.text-lightred {
-    color: #ff5722;
-}
-
-a.text-sky:hover {
-    opacity: 0.8;
-    color: #02c2c7;
-}
-
-a.text-orange:hover {
-    opacity: 0.8;
-    color: #e95601;
-}
-
-a.text-green:hover {
-    opacity: 0.8;
-    color: #5bbd2a;
-}
-
-a.text-yellow:hover {
-    opacity: 0.8;
-    color: #f0d001;
-}
-
-a.text-pink:hover {
-    opacity: 0.8;
-    color: #ff48a4;
-}
-
-a.text-purple:hover {
-    opacity: 0.8;
-    color: #9d60ff;
-}
-
-a.text-lightred:hover {
-    opacity: 0.8;
-    color: #ff5722;
 }

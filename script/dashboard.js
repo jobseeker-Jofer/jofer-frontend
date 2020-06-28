@@ -29,10 +29,7 @@ async function getProfile() {
         birthday.innerHTML = `${results.birthday}`;
         residence.innerHTML = `${results.city}, Indonesia`;
         email.innerHTML = `${results.email}`;
-
-        console.log("skills:", results.skills);
-        let skillsArr = results.skills;
-        skills.innerHTML = skillsArr.join(", ");
+        skills.innerHTML = `${results.skills}`;
     } catch (error) {
         console.log(error);
     }

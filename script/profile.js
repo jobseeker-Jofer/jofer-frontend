@@ -1,5 +1,5 @@
-// --------------- ELEMENTS ----------------
-let saveBtn = document.getElementById("button");
+// // --------------- ELEMENTS ----------------
+// let saveBtn = document.getElementById("button");
 
 // --------------- FUNCTION ----------------
 async function saveProfile() {
@@ -19,6 +19,7 @@ async function saveProfile() {
         let contact = document.getElementById("contact").value;
         let birthday = document.getElementById("birthday").value;
         let city = document.getElementById("city").value;
+        let skills = document.getElementById("skills").value;
 
         if (title == "") {
             title = results.title;
@@ -35,6 +36,9 @@ async function saveProfile() {
         if (city == "") {
             city = results.city;
         }
+        if (skills == "") {
+            skills = results.skills;
+        }
 
         let userData = {
             title,
@@ -42,6 +46,7 @@ async function saveProfile() {
             contact,
             birthday,
             city,
+            skills,
         };
         console.log(userData);
 
@@ -55,20 +60,27 @@ async function saveProfile() {
 
         response = await fetch(endpoint, options);
         console.log(response.json());
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Saved!",
+            showConfirmButton: true,
+            // timer: 2500,
+        });
     } catch (error) {
         console.error(error);
     }
 }
 
 // --------------- EVENT LISTENER ----------------
-saveBtn.addEventListener("click", function () {
-    //   Swal.fire({
-    //     position: "top-end",
-    //     icon: "success",
-    //     title: "Your work has been saved",
-    //     showConfirmButton: false,
-    //     timer: 1500,
-    //   });
-    saveProfile();
-    alert("Data Succesfully Saved!");
-});
+// saveBtn.addEventListener("click", function () {
+//     //   Swal.fire({
+//     //     position: "top-end",
+//     //     icon: "success",
+//     //     title: "Your work has been saved",
+//     //     showConfirmButton: false,
+//     //     timer: 1500,
+//     //   });
+//     saveProfile();
+//     alert("Data Succesfully Saved!");
+// });

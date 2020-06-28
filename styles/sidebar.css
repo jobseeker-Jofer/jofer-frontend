@@ -1,3 +1,16 @@
+:root {
+    --c1: #e0e2df;
+    --c2: #143c61;
+    --c3: #61b4d9;
+    --c4: #222223;
+    --c5: #f2221c;
+    --c6: #4304a3;
+    --c7: #5c77c7;
+    --c8: #768086;
+    --c9: #5f5861;
+    --c10: #2b0b5b;
+    --c11: #15243c;
+}
 body {
     font-size: 0.875rem;
 }
@@ -60,14 +73,30 @@ body {
     font-weight: 500;
     color: #333;
 }
-
+#dashboard:hover,
+#profile:hover,
+#jobboard:hover,
+#signout:hover {
+    font-weight: 500;
+    color: #333;
+    background: var(--c1);
+}
+#dashboard.active:hover,
+#profile.active:hover,
+#jobboard.active:hover,
+#signout.active:hover {
+    color: var(--c10);
+    font-weight: bolder;
+    background: var(--c1);
+}
 .sidebar .nav-link .feather {
     margin-right: 4px;
     color: #999;
 }
 
 .sidebar .nav-link.active {
-    color: #007bff;
+    color: var(--c10);
+    font-weight: bolder;
 }
 
 .sidebar .nav-link:hover .feather,

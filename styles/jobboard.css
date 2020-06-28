@@ -1,9 +1,36 @@
+:root {
+    --c1: #e0e2df;
+    --c2: #143c61;
+    --c3: #61b4d9;
+    --c4: #222223;
+    --c5: #f2221c;
+    --c6: #4304a3;
+    --c7: #5c77c7;
+    --c8: #768086;
+    --c9: #5f5861;
+    --c10: #2b0b5b;
+    --c11: #15243c;
+}
+/* ----------------- NAVBAR ------------------ */
+.navbar .nav-link:hover {
+    background: var(--sky);
+    color: var(--darkpurple);
+}
+.media a {
+    font-family: "Noto Sans JP", sans-serif;
+    color: var(--c10);
+}
+.media a:hover {
+    background-color: var(--c1);
+}
 /* ----------------- JUMBOTRON ------------------ */
 .jumbotron {
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin-bottom: 0;
     background: url(/img/jumbotron.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 @media (min-width: 768px) {
     .jumbotron {
@@ -37,6 +64,7 @@ footer p {
 
 /* ----------------- SEARCH BOX ------------------ */
 .search-sec {
+    margin-top: 20px;
     padding: 2rem;
 }
 .search-slt {

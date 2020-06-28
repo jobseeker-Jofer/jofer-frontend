@@ -19,7 +19,12 @@
             rel="canonical"
             href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pangolin&display=swap"
+            rel="stylesheet"
+        />
         <link href="../assets/dist/css/bootstrap.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <!-- FRONT CSS -->
         <link rel="stylesheet" href="/styles/navbar.css" />
         <link rel="stylesheet" href="/styles/sidebar.css" />
@@ -101,7 +106,7 @@
 
                 <!-- EDIT PROFILE -->
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-                    <h4 class="mb-3">Profile</h4>
+                    <h4 class="mb-3" id="text-profile">Edit Profile</h4>
                     <form class="needs-validation" novalidate>
                         <!-- JOB TITLE -->
                         <div class="col-md-6">
@@ -115,7 +120,7 @@
                             />
                         </div>
                         <!-- DESCRIPTION -->
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 mb-3 desc">
                             <label for="description">Description</label>
                             <div class="input-group">
                                 <textarea
@@ -143,7 +148,7 @@
                                 type="text"
                                 class="form-control"
                                 id="birthday"
-                                placeholder="dd-mm-yy"
+                                placeholder="Ex: 30 March 1998"
                             />
                         </div>
                         <!-- City -->
@@ -156,6 +161,16 @@
                                 placeholder="Ex: Bandung"
                             />
                         </div>
+                        <!-- Skills -->
+                        <div class="col-md-6 mb-3">
+                            <label for="birthday">Skills</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="skills"
+                                placeholder="Format: skill1, skill2, skill3"
+                            />
+                        </div>
 
                         <hr class="mb-4" />
                         <!-- BUTTON -->
@@ -164,6 +179,7 @@
                                 class="btn btn-primary"
                                 type="button"
                                 id="button"
+                                onclick="saveProfile()"
                             >
                                 Save profile
                             </button>
@@ -193,6 +209,15 @@
         <!-- BACK-END -->
         <script src="/script/navbar.js"></script>
         <script src="/script/sidebar.js"></script>
-        <script src="/script/dashboard.js"></script>
+        <script src="/script/profile.js">
+            $(`#button`).click(function() {
+                swal({
+                    title: "this is title",
+                    text: "text here",
+                    icon: 'succes',
+                    button: 'close'
+                });
+            });
+        </script>
     </body>
 </html>
