@@ -1,0 +1,66 @@
+:root {
+    --grey: #e0e2df;
+    --blue: #143c61;
+    --sky: #61b4d9;
+    --black: #222223;
+    --red: #f2221c;
+    --purple: #4304a3;
+    --lightpurple: #5c77c7;
+    --middlegrey: #768086;
+    --darkgray: #5f5861;
+    --darkpurple: #2b0b5b;
+    --navbar: #15243c;
+}
+@font-face {
+    font-family: Brand;
+    src: url(/assets/TextMeOne-yZa3.ttf);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.navbar .nav-link {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+}
+.navbar .nav-link {
+    background: var(--darkpurple);
+    color: var(--grey);
+    margin-right: 10px;
+}
+.navbar .nav-link:hover {
+    color: var(--grey);
+}
+/* ----------------- NAVBAR ------------------ */
+.navbar {
+    margin-bottom: 20px;
+    background: var(--navbar);
+}
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.navbar .navbar-toggler {
+    top: 0.25rem;
+    right: 1rem;
+}
+
+.navbar .form-control {
+    padding: 0.75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
