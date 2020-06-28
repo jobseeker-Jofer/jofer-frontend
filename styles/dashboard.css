@@ -144,31 +144,3 @@ a.text-lightred:hover {
     opacity: 0.8;
     color: #ff5722;
 }
-
-.bg-sky {
-    background-color: #02c2c7;
-}
-
-.bg-orange {
-    background-color: #e95601;
-}
-
-.bg-green {
-    background-color: #5bbd2a;
-}
-
-.bg-yellow {
-    background-color: #f0d001;
-}
-
-.bg-pink {
-    background-color: #ff48a4;
-}
-
-.bg-purple {
-    background-color: #9d60ff;
-}
-
-.bg-lightred {
-    background-color: #ff5722;
-}
