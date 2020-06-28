@@ -1,15 +1,14 @@
 // --------------- ELEMENTS ----------------
 let ul = document.querySelector(".list-unstyled");
 let images = [
+    "/img/logo/mitramas.png",
     "/img/logo/ibm-list.png",
     "/img/logo/zenius-list.png",
     "/img/logo/node-list.png",
 ];
 
 // --------------- FETCH ----------------
-// let endpoint = "https://5ef168d71faf160016b4d5c1.mockapi.io/api/todoapp/users";
 let endpoint = "https://5ef168ca1faf160016b4d5b5.mockapi.io/api/jobList";
-let users = "https://5ef168ca1faf160016b4d5b5.mockapi.io/api/users/1";
 
 // ----------- FUCNTION -----------
 async function getJobList() {
@@ -33,7 +32,7 @@ async function getJobList() {
             let title = document.createElement("a");
             let jobTitle = document.createTextNode(`${job.title}`);
             title.setAttribute("class", "mt-0 mb-1 title");
-            title.setAttribute("href", "/job-offer/index.html");
+            title.setAttribute("href", `/job-offer/${job.tag}.html`);
             title.appendChild(jobTitle);
             // company
             let company = document.createElement("p");

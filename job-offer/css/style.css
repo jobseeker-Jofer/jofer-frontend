@@ -280,7 +280,7 @@ header h1 {
         left: 0;
         height: 100%;
         width: 100%;
-        background: rgba(81, 62, 93, 0.4) url("../img/cd-icon-zoom.svg")
+        background: rgba(81, 62, 93, 0.4) url("/job-offer/img/cd-icon-zoom.svg")
             no-repeat center center;
         /* size of the icon */
         background-size: 48px;
@@ -340,7 +340,7 @@ header h1 {
     display: block;
     width: 48px;
     height: 48px;
-    background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+    background: url("/job-offer/img/cd-icon-arrow.svg") no-repeat center center;
     -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
     -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
     transition: opacity 0.2s 0s, visibility 0s 0s;
@@ -427,7 +427,7 @@ header h1 {
     right: 30px;
     width: 48px;
     height: 48px;
-    background: url("../img/cd-icon-close.svg") no-repeat center center;
+    background: url("/job-offer/img/cd-icon-close.svg") no-repeat center center;
     /* image replacement */
     overflow: hidden;
     text-indent: 100%;

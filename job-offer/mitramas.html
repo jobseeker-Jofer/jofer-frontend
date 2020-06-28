@@ -12,9 +12,10 @@
 
         <!-- CSS reset -->
         <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <!-- FRONT CSS -->
         <link rel="stylesheet" href="/styles/navbar.css" />
-        <link rel="stylesheet" href="css/style.css" />
+
         <!-- Modernizr -->
         <script src="js/modernizr.js"></script>
 
@@ -31,32 +32,48 @@
     <body>
         <!-- NAVBAR -->
         <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
-            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+            <a
+                class="navbar-brand col-md-3 col-lg-2 mr-0 px-3"
+                href="/dashboard.html"
+            >
                 <img src="/img/brand.png" alt="" />
             </a>
             <div>
-                <ul class="nav justify-content-end">
+                <!-- <ul class="nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="menu">
                             <i class="fas fa-sign-out-alt"></i> Sign Out
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
         <!-- END NAVBAR -->
         <header>
-            <h1>Expandable Image Gallery</h1>
+            <h1 id="company">Mitramas Infosys Global</h1>
         </header>
 
         <section class="cd-single-item">
             <div class="cd-slider-wrapper">
                 <ul class="cd-slider">
                     <li class="selected">
-                        <img src="/job-offer/1.png" alt="Product Image 1" />
+                        <img src="/job-offer/img/about.png" alt="about" />
+                    </li>
+                    <li>
+                        <img
+                            src="/job-offer/img/1.png"
+                            alt="Company"
+                            id="pic-company"
+                        />
                     </li>
                 </ul>
                 <!-- cd-slider -->
+
+                <ul class="cd-slider-navigation">
+                    <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                    <li><a href="#0" class="cd-next">Prev</a></li>
+                </ul>
+                <!-- cd-slider-navigation -->
 
                 <a href="#0" class="cd-close">Close</a>
             </div>
@@ -115,7 +132,7 @@
             <p>
                 <strong>Office Address</strong>
             </p>
-            <p>
+            <p id="address">
                 Jalan Tebet Raya No.42, RT.3/RW.2, East Tebet, South Jakarta
                 City, Jakarta, Indonesia
             </p>
