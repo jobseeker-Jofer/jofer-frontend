@@ -10,6 +10,12 @@
     
     <!-- BOOTSTRAP -->
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
     />
@@ -58,7 +64,7 @@
         <!-- Sidebar here -->
         <nav
           id="sidebarMenu"
-          class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse"
+          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
         >
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
@@ -137,39 +143,116 @@
         <!-- END SIDEBAR -->
 
         <!-- PROFILE -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
-          <div class="about-text go-to">
-            <h3 class="dark-color" id="name">Resha Puspita</h3>
-            <h6 class="theme-color lead" id="title">Web Developer</h6>
-            <p id="desc">Aku seorang kapiten</p>
-            <h6 class="theme-color" >
-              <span data-feather="phone"></span>
-              <span id="contact"></span>
-            </h6>
-              
-              
-            <div class="row about-list">
-              <div class="col-md-6">
-                  <div class="media" >
-                    <label>Birthday</label>
-                    <p id="birthday">30th March 1998</p>
-                  </div>
-                  <div class="media" >
-                    <label>Residence</label>
-                    <p id="residence">Indonesia</p>
-                  </div>
-                  <div class="media" >
-                    <label>E-mail</label>
-                    <p id="email">adhadi@gmail.com</p>
-                  </div>
-                  <div class="media" >
-                    <label>Skills</label>
-                    <ul id="skills">
-                      <!-- list skill here -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div class="team-single">
+            
+            <div class="row">
+              <div class="col-lg-8 col-md-7">
+                <div class="team-single-text padding-50px-left sm-no-padding-left">
+                  <div class="contact-info-section margin-40px-tb">
+                    <h4 class="font-size38 sm-font-size32 xs-font-size30" id="name">
+                      Buckle Giarza
+                    </h4>
+                    <ul class="list-style9 no-margin">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-5 col-5">
+                            <i class="fas fa-compass text-orange"></i>
+                            <strong class="margin-10px-left text-orange"
+                              >Residence:</strong
+                            >
+                          </div>
+                          <div class="col-md-7 col-7">
+                            <p id="residence">Bandung, Indonesia</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col-md-5 col-5">
+                            <i class="fas fa-birthday-cake text-yellow"></i>
+                            <strong class="margin-10px-left text-yellow"
+                              >Birthday:</strong
+                            >
+                          </div>
+                          <div class="col-md-7 col-7">
+                            <p id="birthday">Mei</p>
+                          </div>
+                        </div>
+                      </li>                      
+                      <li>
+                        <div class="row">
+                          <div class="col-md-5 col-5">
+                            <i class="fas fa-mobile-alt text-purple"></i>
+                            <strong
+                              class="margin-10px-left xs-margin-four-left text-purple"
+                              >Phone:</strong
+                            >
+                          </div>
+                          <div class="col-md-7 col-7">
+                            <p id="contact">(+44) 123 456 789</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col-md-5 col-5">
+                            <i class="fas fa-envelope text-pink"></i>
+                            <strong
+                              class="margin-10px-left xs-margin-four-left text-pink"
+                              >Email:</strong
+                            >
+                          </div>
+                          <div class="col-md-7 col-7">
+                            <p>
+                              <a href="javascript:void(0)" id="email">addyour@emailhere</a>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col-md-5 col-5">
+                            <i class="fas fa-toolbox text-pink"></i>
+                            <strong
+                              class="margin-10px-left xs-margin-four-left text-pink"
+                              >Skills:</strong
+                            >
+                          </div>
+                          <div class="col-md-7 col-7">
+                            <p id="skills">
+                              HTML, CSS, JS
+                            </p>
+                          </div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
+              </div>
+              <div class="col-lg-4 col-md-5 xs-margin-30px-bottom user-profile">
+                <div class="team-single-img">
+                  <img
+                    src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center"
+                >
+                  <h4
+                    class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600" id="title"
+                  >
+                    Class Teacher
+                  </h4>
+                  <p class="sm-width-95 sm-margin-auto" id="desc">
+                    We are proud of child student. We teaching great activities and
+                    best program for your kids.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </main>
         <!-- END PROFILE -->
       </div>
