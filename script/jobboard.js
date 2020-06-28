@@ -124,9 +124,41 @@ async function filter() {
         console.error(error);
     }
 }
+async function filterBtn() {
+    try {
+        // Declare variables
+        let input, filter, li, a, i, txtValue;
+        input = document.getElementById("search");
+        filter = input.value.toUpperCase();
+        li = ul.getElementsByTagName("li");
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+                Swal.fire({
+                    position: "center",
+                    icon: "info",
+                    title: "Your Search Didn't Match Any",
+                    showConfirmButton: true,
+                    // timer: 5000,
+                });
+            }
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
 // ----------- EVENT LISTENER -----------
 let searchBar = document.getElementById("search");
+let searchBtn = document.getElementById("button");
+
 searchBar.addEventListener("keyup", filter);
+searchBtn.addEventListener("keyup", filterBtn);
 
 // ----------- MAIN JOBBOARD -----------
 getJobList();
