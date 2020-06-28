@@ -11,9 +11,6 @@ let images = [
     "/img/logo/sirclo.png",
     "/img/logo/gojek.png",
     "/img/logo/zenius.png",
-    "/img/logo/ibm.png",
-    "/img/logo/node.png",
-    "/img/logo/jenius.png",
 ];
 
 // --------------- FETCH ----------------
