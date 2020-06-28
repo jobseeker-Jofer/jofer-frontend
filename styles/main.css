@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
-
+@font-face {
+    font-family: Brand;
+    src: url(/assets/TextMeOne-yZa3.ttf);
+}
+#brand {
+    font-family: 'Brand';
+}
 * {
     font-family: "Quicksand", sans-serif;
     font-size: x-large;
