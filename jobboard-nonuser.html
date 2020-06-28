@@ -1,102 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Jofer</title>
+        <!-- BOOTSTRAP -->
+        <link
+            rel="canonical"
+            href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
+        />
+        <link href="../assets/dist/css/bootstrap.css" rel="stylesheet" />
+        <!-- FRONT CSS -->
+        <link rel="stylesheet" href="/styles/sidebar.css" />
+        <link rel="stylesheet" href="/styles/jobboard-nonuser.css" />
+    </head>
+    <body>
+        <!-- NavBar here -->
+        <nav
+            class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+        >
+            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
+                >Jofer</a
+            >
+            <button
+                class="navbar-toggler position-absolute d-md-none collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#sidebarMenu"
+                aria-controls="sidebarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <input
+                class="form-control form-control-dark w-100"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+                style="visibility: hidden;"
+            />
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="#" style="visibility: hidden;"
+                        >Sign out</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Jofer</title>
-    <!-- <link rel="stylesheet" href="/styles/profile.css" /> -->
-    <!-- BOOTSTRAP -->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/" />
-    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet" />
-    <!-- FRONT CSS -->
-    <link rel="stylesheet" href="/styles/sidebar.css" />
-    <link rel="stylesheet" href="/styles/jobboard-nonuser.css" />
-</head>
-
-<body>
-    <!-- NavBar here -->
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="./index.html">Jofer</a>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
-            data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"
-            style="visibility: hidden;" />
-        <ul class="navbar-nav px-3">
-            <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#" style="visibility: hidden;">Sign out</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- END NAVBAR -->
-
-    <!-- MAIN PAGE -->
-    <div class="container-fluid">
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-            <!-- JOB SEARCH: JUMBOTRON -->
-            <section class="jumbotron text-center">
-                <div class="container">
-                    <h1>Album example</h1>
-                    <p class="lead text-muted">
-                        Something short and leading about the collection
-                        below—its contents, the creator, etc. Make it short
-                        and sweet, but not too short so folks don’t simply
-                        skip over it entirely.
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                    </p>
-                </div>
-            </section>
-            <!-- JOB SEARCH: SEARCH BAR -->
-            <section class="search-sec">
-                <div class="container">
-                    <form action="#" method="post" novalidate="novalidate">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-3 col-sm-12 p-0">
-                                <input type="text" class="form-control search-slt" placeholder="Enter Job Title" />
+        <!-- MAIN PAGE -->
+        <div class="container-fluid">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <!-- JOB SEARCH: JUMBOTRON -->
+                <section class="jumbotron text-center">
+                    <div class="container">
+                        <h1>Album example</h1>
+                        <p class="lead text-muted">
+                            Something short and leading about the collection
+                            below—its contents, the creator, etc. Make it short
+                            and sweet, but not too short so folks don’t simply
+                            skip over it entirely.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary my-2"
+                                >Main call to action</a
+                            >
+                            <a href="#" class="btn btn-secondary my-2"
+                                >Secondary action</a
+                            >
+                        </p>
+                    </div>
+                </section>
+                <!-- JOB SEARCH: SEARCH BAR -->
+                <section class="search-sec">
+                    <div class="container">
+                        <form action="#" method="post" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-3 col-sm-12 p-0">
+                                    <input
+                                        type="text"
+                                        class="form-control search-slt"
+                                        placeholder="Enter Job Title"
+                                        id="search"
+                                    />
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <button
+                                        type="button"
+                                        class="btn btn-danger wrn-btn"
+                                        id="button"
+                                    >
+                                        Search
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <button type="button" class="btn btn-danger wrn-btn" id="search">
-                                    Search
-                                </button>
+                        </form>
+                    </div>
+                </section>
+                <!-- JOB SEARCH: JOB LIST -->
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="col">
+                            <div class="col-md-10">
+                                <ul class="list-unstyled"></ul>
                             </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <!-- JOB SEARCH: JOB LIST -->
-            <div class="album py-5 bg-light">
-                <div class="container">
-                    <div class="col">
-                        <div class="col-md-10">
-                            <ul class="list-unstyled"></ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-    </div>
-    <!-- BACK END -->
-    <script src="/script/jobboard-nonuser.js"></script>
+            </main>
+        </div>
+        <!-- BACK END -->
+        <script src="/script/jobboard.js"></script>
 
-    <!-- bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script>
-        window.jQuery ||
-            document.write(
-                '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
-            );
-    </script>
-    <script src="../assets/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="/script/sidebar.js"></script>
-</body>
-
+        <!-- bootstrap -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            window.jQuery ||
+                document.write(
+                    '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
+                );
+        </script>
+        <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    </body>
 </html>

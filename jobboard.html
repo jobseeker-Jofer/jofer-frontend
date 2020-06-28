@@ -7,49 +7,39 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Jofer</title>
-    <!-- <link rel="stylesheet" href="/styles/profile.css" /> -->
     <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
     />
     <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
     <!-- FRONT CSS -->
+    <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/sidebar.css" />
     <link rel="stylesheet" href="/styles/jobboard.css">
   </head>
   <body>
-    <!-- NavBar here -->
-    <nav
-    class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
-  >
-    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
-      >Jofer</a
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
+      >
+      <img src="/img/brand.png" alt="">
+      </a
     >
-    <button
-      class="navbar-toggler position-absolute d-md-none collapsed"
-      type="button"
-      data-toggle="collapse"
-      data-target="#sidebarMenu"
-      aria-controls="sidebarMenu"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <input
-      class="form-control form-control-dark w-100"
-      type="text"
-      placeholder="Search"
-      aria-label="Search"
-      style="visibility: hidden;"
-    />
-    <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
-        <a class="nav-link" href="#" style="visibility: hidden;">Sign out</a>
-      </li>
-    </ul>
-  </nav>
+      <div>
+        <ul class="nav justify-content-end" >
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="menu"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   <!-- END NAVBAR -->
 
   <!-- MAIN PAGE -->
@@ -63,7 +53,7 @@
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="/dashboard.html">
+                <a class="nav-link" href="/dashboard.html">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
@@ -75,7 +65,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/jobboard.html">
+                <a class="nav-link active" href="/jobboard.html">
                   <span data-feather="search"></span>
                   Job Board
                 </a>
@@ -226,9 +216,6 @@
             </div>
           </div>
         </main>
-
-    <!-- BACK END -->
-    <script src="/script/jobboard.js"></script>
     
     <!-- bootstrap -->
     <script
@@ -245,6 +232,9 @@
     <script src="../assets/dist/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!-- BACK-END -->
+    <script src="/script/navbar.js"></script>
     <script src="/script/sidebar.js"></script>
+    <script src="/script/jobboard.js"></script>
   </body>
 </html>
