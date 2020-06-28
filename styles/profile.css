@@ -1,24 +1,46 @@
 :root {
-  --sidebar: #ffffff;
-  --hover: #76b39d;
-  --body: #6f8ba4;
-  --profile: #f5f5f5;
-  --label: #20247b;
+    --sidebar: #ffffff;
+    --hover: #76b39d;
+    --body: #6f8ba4;
+    --profile: #f5f5f5;
+    --label: #20247b;
+    --c1: #e0e2df;
+    --c2: #143c61;
+    --c3: #61b4d9;
+    --c4: #222223;
+    --c5: #f2221c;
+    --c6: #4304a3;
+    --c7: #5c77c7;
+    --c8: #768086;
+    --c9: #5f5861;
+    --c10: #2b0b5b;
+    --c11: #15243c;
 }
 
 body {
-  color: var(--body);
+    color: var(--body);
 }
-
+main {
+    font-family: "Noto Sans JP", sans-serif;
+}
+.desc {
+    margin-top: 15px;
+}
+#text-profile {
+    color: var(--label);
+}
+form {
+    color: var(--c2);
+}
 /* ----------------- RESPONSIVE ------------------ */
 @media (max-width: 767px) {
-  .about-text h3 {
-    font-size: 35px;
-  }
-  .about-text h6 {
-    font-size: 18px;
-  }
-  .about-avatar {
-    margin-top: 30px;
-  }
+    .about-text h3 {
+        font-size: 35px;
+    }
+    .about-text h6 {
+        font-size: 18px;
+    }
+    .about-avatar {
+        margin-top: 30px;
+    }
 }
