@@ -3,9 +3,130 @@
 Custom CSS JOFER
 
 -------------------------------- */
+:root {
+    --grey: #e0e2df;
+    --blue: #143c61;
+    --sky: #61b4d9;
+    --black: #222223;
+    --red: #f2221c;
+    --purple: #4304a3;
+    --lightpurple: #5c77c7;
+    --middlegrey: #768086;
+    --darkgray: #5f5861;
+    --darkpurple: #2b0b5b;
+    --navbar: #15243c;
+}
+
 h1 {
     background: url("/job-offer/about-company.png");
 }
+.navbar .nav-link:hover {
+    background: var(--sky);
+    color: var(--darkpurple);
+}
+/* NAV */
+nav {
+    display: block;
+}
+.navbar {
+    margin-bottom: 0 !important;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+}
+.p-0 {
+    padding: 0 !important;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.flex-md-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+/* a */
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    text-decoration: none;
+}
+.col-md-3,
+.col-lg-2 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+.mr-0 {
+    margin-right: 0 !important;
+}
+.px-3 {
+    padding-right: 1rem !important;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration: none;
+}
+
+.nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+/* ul */
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.justify-content-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
 /* -------------------------------- 
 
 Primary style
