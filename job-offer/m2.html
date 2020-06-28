@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- FRONT CSS -->
+        <link rel="stylesheet" href="/styles/navbar.css" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <title>Job Offer | Jofer: Get Your Offers with Jofer</title>
+        <!-- BOOTSTRAP -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+            <a
+                class="navbar-brand col-md-3 col-lg-2 mr-0 px-3"
+                href="/jobboard.html"
+                id="brand"
+            >
+                <img src="/img/brand.png" alt="" />
+            </a>
+            <!-- <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item" onclick="logout()">
+                        <a class="nav-link" href="#" id="menu">
+                            <i class="fas fa-sign-out-alt"></i> Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+        <!-- END NAVBAR -->
+        <header>
+            <h1 id="company">Web Developer Front End</h1>
+        </header>
+
+        <section class="cd-single-item">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected">
+                        <img src="/job-offer/img/about.png" alt="about" />
+                    </li>
+                    <li>
+                        <img
+                            src="/job-offer/img/7.png"
+                            alt="Company"
+                            id="pic-company"
+                        />
+                    </li>
+                </ul>
+                <!-- cd-slider -->
+
+                <ul class="cd-slider-navigation">
+                    <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                    <li><a href="#0" class="cd-next">Prev</a></li>
+                </ul>
+                <!-- cd-slider-navigation -->
+
+                <a href="#0" class="cd-close">Close</a>
+            </div>
+            <!-- cd-slider-wrapper -->
+
+            <div class="cd-item-info">
+                <h2>Job Description</h2>
+
+                <p>What we’re looking for…</p>
+
+                <p>
+                    We are looking for young and ambitious developers to design
+                    and code our websites, from layout to function according to
+                    ever-evolving design specifications. Our goal is to keep
+                    building web-based tools that will help us become better at
+                    our job: to tell our clients’ stories in a meaningful way.
+                </p>
+
+                <p>
+                    Successful candidates will work closely with our project
+                    managers, strategists, and design team to develop
+                    specifications and build code for web applications aimed at
+                    marketing, community building, and analytics.
+                </p>
+
+                <p><strong>Responsibilities</strong></p>
+
+                <li>
+                    Design, develop, test, deploy, and support production
+                    quality code.
+                </li>
+                <li>Plan, track, and report on work progress.</li>
+                <li>
+                    Accurately estimate stories and tasks considering their
+                    level of effort, complexity, and uncertainty.
+                </li>
+                <li>
+                    Debrief on team performance and make small, incremental
+                    changes to support improvements.
+                </li>
+
+                <p>
+                    We are looking for self-starting individuals who are bent on
+                    challenging the status quo. If you have the right skills and
+                    are creative, organized, focused, and principled, then we’d
+                    love to take a look at your CV and portfolio and get you
+                    that interview right away!
+                </p>
+
+                <p>
+                    Our offer? Aside from a very competitive salary and the
+                    chance to earn generous bonuses, M2.0 has a very
+                    enterprising team culture that places emphasis on
+                    creativity, innovation, and getting the job done at all
+                    costs.
+                </p>
+
+                <h2>Minimum Qualification</h2>
+
+                <li>
+                    Hands-on experience in one or more of the following
+                    technologies: JavaScript, NodeJS, AWS, React/Redux, CSS, and
+                    REST APIs.
+                </li>
+                <li>Proven ability to collaborate with a team.</li>
+                <li>Curious with an aptitude to learn quickly.</li>
+                <li>Must be able to work in our office in Quezon City.</li>
+
+                <button class="apply" id="button" onclick="myFunction()">
+                    Apply Job
+                </button>
+            </div>
+            <!-- cd-item-info -->
+        </section>
+        <!-- cd-single-item -->
+
+        <section class="cd-content">
+            <p style="font-weight: bolder;">
+                Office Address
+            </p>
+            <p id="address">
+                # 94 Scout Castor
+            </p>
+        </section>
+
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Resource jQuery -->
+
+        <!-- Resource jQuery -->
+        <script src="/script/company.js">
+            $(`#button`).click(function() {
+                swal({
+                    title: "this is title",
+                    text: "text here",
+                    icon: 'succes',
+                    button: 'close'
+                });
+            });
+        </script>
+    </body>
+</html>

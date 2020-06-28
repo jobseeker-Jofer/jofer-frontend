@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- FRONT CSS -->
+        <link rel="stylesheet" href="/styles/navbar.css" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <title>Job Offer | Jofer: Get Your Offers with Jofer</title>
+        <!-- BOOTSTRAP -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+            <a
+                class="navbar-brand col-md-3 col-lg-2 mr-0 px-3"
+                href="/jobboard.html"
+                id="brand"
+            >
+                <img src="/img/brand.png" alt="" />
+            </a>
+            <!-- <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item" onclick="logout()">
+                        <a class="nav-link" href="#" id="menu">
+                            <i class="fas fa-sign-out-alt"></i> Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+        <!-- END NAVBAR -->
+        <header>
+            <h1 id="company">UI/UX Designer</h1>
+        </header>
+
+        <section class="cd-single-item">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected">
+                        <img src="/job-offer/img/about.png" alt="about" />
+                    </li>
+                    <li>
+                        <img
+                            src="/job-offer/img/10.png"
+                            alt="Company"
+                            id="pic-company"
+                        />
+                    </li>
+                </ul>
+                <!-- cd-slider -->
+
+                <ul class="cd-slider-navigation">
+                    <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                    <li><a href="#0" class="cd-next">Prev</a></li>
+                </ul>
+                <!-- cd-slider-navigation -->
+
+                <a href="#0" class="cd-close">Close</a>
+            </div>
+            <!-- cd-slider-wrapper -->
+
+            <div class="cd-item-info">
+                <h2>Job Description</h2>
+
+                <li>
+                    Work with the Senior UI designer to deliver attractive user
+                    interfaces across a range of mobile apps & websites.
+                </li>
+                <li>
+                    Keep up to date with the latest UI design and usability
+                    trends and techniques
+                </li>
+                <li>
+                    Contribute to the company’s UI design style guide or design
+                    system.
+                </li>
+                <li>
+                    Work with the Product Manager to assess the impact of any UI
+                    changes/improvements
+                </li>
+                <li>
+                    Work with a team of UX designers to ensure any UI design
+                    changes help to compliment the overall user experience and
+                    journey
+                </li>
+                <li>
+                    Conduct UI design and usability competitor analysis and
+                    reports
+                </li>
+                <li>
+                    Help to create UI design wireframes, mock ups and final
+                    designs across all mobile, desktop and tablet devices
+                </li>
+                <li>
+                    Support the Senior UI designer to create mock-ups Present
+                    and defend your design decisions.
+                </li>
+                <li>
+                    All your design decisions should be based on the overall
+                    design roadmap as well as your own design thinking and
+                    fundamental principles (i.e. color theory, visual weight,
+                    etc.)
+                </li>
+
+                <h2>Minimum Qualification</h2>
+
+                <li>
+                    Minimum of 3 years of experience and proven track record.
+                </li>
+                <li>
+                    Experience of designing mobile-responsive design
+                    (progressive web apps) and mobile applications
+                </li>
+                <li>
+                    Experience of using design &amp; prototyping tools including
+                    but not limited to InVision, Sketch, Adobe XD, Photoshop,
+                    etc.
+                </li>
+                <li>
+                    Understanding of basic front-end languages: HTML5, CSS3
+                    Javascript.
+                </li>
+                <li>
+                    Hands-on experience creating wireframes, prototypes,
+                    storyboards, user flows, etc.
+                </li>
+                <li>
+                    Experience working in an agile/scrum development process
+                </li>
+                <li>
+                    Understanding and proven use of user-centered design
+                    processes and methods
+                </li>
+                <li>
+                    Experience of creating storyboards and website mapping is a
+                    plus
+                </li>
+                <li>
+                    Strong portfolio to be presented and defended during
+                    interview.
+                </li>
+                <li>Creative ideas with problem solving mindset.</li>
+                <li>
+                    Be open to receiving objective criticism and improving upon
+                    it.
+                </li>
+
+                <button class="apply" id="button" onclick="myFunction()">
+                    Apply Job
+                </button>
+            </div>
+            <!-- cd-item-info -->
+        </section>
+        <!-- cd-single-item -->
+
+        <section class="cd-content">
+            <p style="font-weight: bolder;">
+                Office Address
+            </p>
+            <p id="address">
+                Jalan Doktor Saharjo, RT.1/RW.1, West Tebet, South Jakarta City,
+                Jakarta, Indonesia
+            </p>
+        </section>
+
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Resource jQuery -->
+
+        <!-- Resource jQuery -->
+        <script src="/script/company.js">
+            $(`#button`).click(function() {
+                swal({
+                    title: "this is title",
+                    text: "text here",
+                    icon: 'succes',
+                    button: 'close'
+                });
+            });
+        </script>
+    </body>
+</html>

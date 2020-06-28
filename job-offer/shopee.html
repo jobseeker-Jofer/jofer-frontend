@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- FRONT CSS -->
+        <link rel="stylesheet" href="/styles/navbar.css" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <title>Job Offer | Jofer: Get Your Offers with Jofer</title>
+        <!-- BOOTSTRAP -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+            <a
+                class="navbar-brand col-md-3 col-lg-2 mr-0 px-3"
+                href="/jobboard.html"
+                id="brand"
+            >
+                <img src="/img/brand.png" alt="" />
+            </a>
+            <!-- <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item" onclick="logout()">
+                        <a class="nav-link" href="#" id="menu">
+                            <i class="fas fa-sign-out-alt"></i> Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+        <!-- END NAVBAR -->
+        <header>
+            <h1 id="company">
+                IT Network Engineer
+            </h1>
+        </header>
+
+        <section class="cd-single-item">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected">
+                        <img src="/job-offer/img/about.png" alt="about" />
+                    </li>
+                    <li>
+                        <img
+                            src="/job-offer/img/6.png"
+                            alt="Company"
+                            id="pic-company"
+                        />
+                    </li>
+                </ul>
+                <!-- cd-slider -->
+
+                <ul class="cd-slider-navigation">
+                    <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                    <li><a href="#0" class="cd-next">Prev</a></li>
+                </ul>
+                <!-- cd-slider-navigation -->
+
+                <a href="#0" class="cd-close">Close</a>
+            </div>
+            <!-- cd-slider-wrapper -->
+
+            <div class="cd-item-info">
+                <h2>Job Description</h2>
+
+                <li>
+                    Analyze requirements and perform network and system
+                    solutioning, planning, installation and setup of network and
+                    system architecture
+                </li>
+                <li>
+                    Review new solutions and improve resilience of the current
+                    network and system environment
+                </li>
+                <li>
+                    Plan, deploy and monitor IT solutions to ensure system
+                    hardening and network security
+                </li>
+                <li>
+                    Provide network, server and system operation support, issue
+                    isolation, and troubleshooting for incidents
+                </li>
+                <li>
+                    Produce enterprise-level designs for Active Directory, and
+                    perform implementation, enhancement and maintenance
+                </li>
+                <li>
+                    Proactively maintain Linux infrastructure technology for
+                    backend services
+                </li>
+                <li>
+                    Collaborate with HQ IT operation engineers to plan and
+                    execute new projects and conduct technical transfer whenever
+                    required
+                </li>
+                <li>
+                    Maintain detailed technical documentation for team members
+                    to review, learn and retrieve relevant information
+                    effortlessly
+                </li>
+                <li>
+                    Continuously work on optimizing existing services and
+                    explore new technical solutions to address current and
+                    future challenges
+                </li>
+
+                <h2>Minimum Qualification</h2>
+
+                <li>
+                    <strong
+                        >Willing to be placed in Bekasi Warehouse, Jawa
+                        Barat</strong
+                    >
+                </li>
+                <li><strong>Willing to travel to other Warehouse</strong></li>
+                <li>
+                    Bachelor’s degree in Computer Science, Engineering or
+                    Information Technology or a related field preferred
+                </li>
+                <li>
+                    Minimum 5 years' of relevant experience operating in a
+                    similar role
+                </li>
+                <li>
+                    Strong network knowledge and hands-on experience in Palo
+                    Alto firewalls, and other network appliances (Cisco
+                    CCNA/CCNP is a plus)
+                </li>
+                <li>
+                    Able to configure and optimize monitoring systems for all
+                    network devices and services
+                </li>
+                <li>
+                    Windows/Linux server administration experience is required
+                </li>
+                <li>
+                    Rich experience in providing and operating enterprise
+                    services such as Active Directory, VPN, Wireless network,
+                    NAS, etc.
+                </li>
+                <li>
+                    Solid experience of configuring and operating VMware and
+                    HyperV products
+                </li>
+                <li>
+                    Initiative, enthusiasm and willingness to learn in a fluid
+                    and fast-paced environment
+                </li>
+                <li>
+                    Has passion for technology and wants to make a difference
+                    with technology solutions
+                </li>
+
+                <button class="apply" id="button" onclick="myFunction()">
+                    Apply Job
+                </button>
+            </div>
+            <!-- cd-item-info -->
+        </section>
+        <!-- cd-single-item -->
+
+        <section class="cd-content">
+            <p style="font-weight: bolder;">
+                Office Address
+            </p>
+            <p id="address">
+                Bekasi City, West Java (Jawa Barat), Indonesia
+            </p>
+        </section>
+
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Resource jQuery -->
+
+        <!-- Resource jQuery -->
+        <script src="/script/company.js">
+            $(`#button`).click(function() {
+                swal({
+                    title: "this is title",
+                    text: "text here",
+                    icon: 'succes',
+                    button: 'close'
+                });
+            });
+        </script>
+    </body>
+</html>

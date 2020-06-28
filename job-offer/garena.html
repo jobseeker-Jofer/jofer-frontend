@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- FRONT CSS -->
+        <link rel="stylesheet" href="/styles/navbar.css" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <title>Job Offer | Jofer: Get Your Offers with Jofer</title>
+        <!-- BOOTSTRAP -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+            <a
+                class="navbar-brand col-md-3 col-lg-2 mr-0 px-3"
+                href="/jobboard.html"
+                id="brand"
+            >
+                <img src="/img/brand.png" alt="" />
+            </a>
+            <!-- <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item" onclick="logout()">
+                        <a class="nav-link" href="#" id="menu">
+                            <i class="fas fa-sign-out-alt"></i> Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+        <!-- END NAVBAR -->
+        <header>
+            <h1 id="company">Network Engineer</h1>
+        </header>
+
+        <section class="cd-single-item">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected">
+                        <img src="/job-offer/img/about.png" alt="about" />
+                    </li>
+                    <li>
+                        <img
+                            src="/job-offer/img/3.png"
+                            alt="Company"
+                            id="pic-company"
+                        />
+                    </li>
+                </ul>
+                <!-- cd-slider -->
+
+                <ul class="cd-slider-navigation">
+                    <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                    <li><a href="#0" class="cd-next">Prev</a></li>
+                </ul>
+                <!-- cd-slider-navigation -->
+
+                <a href="#0" class="cd-close">Close</a>
+            </div>
+            <!-- cd-slider-wrapper -->
+
+            <div class="cd-item-info">
+                <h2>Job Description</h2>
+                <p>
+                    Network Engineers develop network architectures that support
+                    the high bandwidth and low latency requirements of our
+                    products and games. They ensure that the data center network
+                    is always efficient, robust, scalable, and secure.
+                </p>
+
+                <li>
+                    Analyze requirement and perform network solutioning,
+                    planning, installation and setup of network systems
+                </li>
+                <li>
+                    Provide network operation support, problem determination,
+                    and troubleshooting for network incidents and escalate to
+                    vendor and management accordingly
+                </li>
+                <li>
+                    Review and verify the design and implementation of the
+                    network solution
+                </li>
+                <li>Manage the inventory of network devices</li>
+                <li>
+                    Maintain network performance by performing network
+                    monitoring, analysis, and performance tuning
+                </li>
+                <li>
+                    Create and maintain documentation related to network
+                    configuration, policies, procedures and service records
+                </li>
+                <li>
+                    Participate and provide technical support in network
+                    implementation projects wherever and whenever required
+                </li>
+                <p>
+                    Network Engineers develop network architectures that support
+                    the high bandwidth and low latency requirements of our
+                    products and games. They ensure that the data center network
+                    is always efficient, robust, scalable, and secure.
+                </p>
+
+                <h2>Minimum Qualification</h2>
+
+                <li>
+                    Bachelor's degree or higher in Computer Science/Information
+                    Technology or relevant field
+                </li>
+                <li>
+                    Good understanding of routing protocols like OSPF and BGP
+                </li>
+                <li>Basic Systems administration experience with Linux</li>
+                <li>
+                    Experience with Nexus, Cisco, and Juniper switches is a plus
+                </li>
+                <li>CCNA, CCNP, CCIE is a plus</li>
+                <li>
+                    Good communication and coordination skills with both
+                    internal and external stakeholders
+                </li>
+                <li>May be required to provide on-call support</li>
+
+                <button class="apply" id="button" onclick="myFunction()">
+                    Apply Job
+                </button>
+            </div>
+            <!-- cd-item-info -->
+        </section>
+        <!-- cd-single-item -->
+
+        <section class="cd-content">
+            <p style="font-weight: bolder;">
+                Office Address
+            </p>
+            <p id="address">
+                Pacific Century Place, SCBD Lot 10, Jl Jend Sudirman Kav. 52-53,
+                Jakarta Selatan 12190
+            </p>
+        </section>
+
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Resource jQuery -->
+
+        <!-- Resource jQuery -->
+        <script src="/script/company.js">
+            $(`#button`).click(function() {
+                swal({
+                    title: "this is title",
+                    text: "text here",
+                    icon: 'succes',
+                    button: 'close'
+                });
+            });
+        </script>
+    </body>
+</html>

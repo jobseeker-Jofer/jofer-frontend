@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- FRONT CSS -->
+        <link rel="stylesheet" href="/styles/navbar.css" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <title>Job Offer | Jofer: Get Your Offers with Jofer</title>
+        <!-- BOOTSTRAP -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+            <a
+                class="navbar-brand col-md-3 col-lg-2 mr-0 px-3"
+                href="/jobboard.html"
+                id="brand"
+            >
+                <img src="/img/brand.png" alt="" />
+            </a>
+            <!-- <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item" onclick="logout()">
+                        <a class="nav-link" href="#" id="menu">
+                            <i class="fas fa-sign-out-alt"></i> Sign Out
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+        <!-- END NAVBAR -->
+        <header>
+            <h1 id="company">Account Executive</h1>
+        </header>
+
+        <section class="cd-single-item">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected">
+                        <img src="/job-offer/img/about.png" alt="about" />
+                    </li>
+                    <li>
+                        <img
+                            src="/job-offer/img/7.png"
+                            alt="Company"
+                            id="pic-company"
+                        />
+                    </li>
+                </ul>
+                <!-- cd-slider -->
+
+                <ul class="cd-slider-navigation">
+                    <li><a href="#0" class="cd-prev inactive">Next</a></li>
+                    <li><a href="#0" class="cd-next">Prev</a></li>
+                </ul>
+                <!-- cd-slider-navigation -->
+
+                <a href="#0" class="cd-close">Close</a>
+            </div>
+            <!-- cd-slider-wrapper -->
+
+            <div class="cd-item-info">
+                <h2>Job Description</h2>
+
+                <li>
+                    Work closely with merchants, includes approaching new
+                    merchant and maintaining good relationships between GO-JEK
+                    and our top 20% merchants
+                </li>
+                <li>
+                    Collaborate with business owner to provide bigger business
+                    opportunities and help to boost their revenue by using
+                    GO-JEK’s products.
+                </li>
+                <li>
+                    Work to perform in analysing GO-JEK customers satisfaction
+                    and needs, which may open up new opportunities for
+                    cooperation.
+                </li>
+                <li>
+                    You will help in organising and coordinating micro internal
+                    and external events.
+                </li>
+
+                <h2>Minimum Qualification</h2>
+
+                <li>Willing to be located in all region in Indonesia</li>
+                <li>
+                    Candidate must possess at least Bachelor's Degree/Post
+                    Graduate Diploma/Professional Degree in any field
+                </li>
+                <li>Fresh graduate with some organizational activities</li>
+                <li>
+                    Min. 3-4 years experience in sales area, Preferable
+                    industries: unicorn tech-company, top multinational FMCG,
+                    SME Banking (Funding, Lending, Credit Card)​​​​​​​
+                </li>
+
+                <button class="apply" id="button" onclick="myFunction()">
+                    Apply Job
+                </button>
+            </div>
+            <!-- cd-item-info -->
+        </section>
+        <!-- cd-single-item -->
+
+        <section class="cd-content">
+            <p style="font-weight: bolder;">
+                Office Address
+            </p>
+            <p id="address">
+                Jl. Raya Serpong No.7, Pakualam, Kec. Serpong Utara Kota
+                Tangerang Selatan, Banten 15320
+            </p>
+        </section>
+
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Resource jQuery -->
+
+        <!-- Resource jQuery -->
+        <script src="/script/company.js">
+            $(`#button`).click(function() {
+                swal({
+                    title: "this is title",
+                    text: "text here",
+                    icon: 'succes',
+                    button: 'close'
+                });
+            });
+        </script>
+    </body>
+</html>
