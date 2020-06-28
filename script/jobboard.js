@@ -2,9 +2,18 @@
 let ul = document.querySelector(".list-unstyled");
 let images = [
     "/img/logo/mitramas.png",
-    "/img/logo/ibm-list.png",
-    "/img/logo/zenius-list.png",
-    "/img/logo/node-list.png",
+    "/img/logo/binar.png",
+    "/img/logo/garena.png",
+    "/img/logo/zenroom.png",
+    "/img/logo/warpin.png",
+    "/img/logo/shopee.png",
+    "/img/logo/m2.png",
+    "/img/logo/sirclo.png",
+    "/img/logo/gojek.png",
+    "/img/logo/zenius.png",
+    "/img/logo/ibm.png",
+    "/img/logo/node.png",
+    "/img/logo/jenius.png",
 ];
 
 // --------------- FETCH ----------------
