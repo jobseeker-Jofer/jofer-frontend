@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/login.css" />
         <title>Sign-in | Jofer: Get Your Offers with Jofer</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     </head>
 
     <body>
         <!-- start login  -->
         <section>
-            <div class="container">
+            <div class="container" data-aos="fade-right">
                 <div class="user signinBx" id="signin">
                     <div class="imgBx">
                         <img
@@ -50,6 +51,10 @@
             </div>
         </section>
         <!-- End login  -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="/script/login.js"></script>
     </body>
 </html>

@@ -30,12 +30,30 @@ async function register() {
             let registeredUser = users.filter((user) => user.email === email);
 
             if (registeredUser.length > 0) {
-                alert("Your email has been registered");
+                Swal.fire({
+                    position: "center",
+                    icon: "warning",
+                    title: "Your email has been registered, fill another email",
+                    showConfirmButton: true,
+                    // timer: 5000,
+                });
+                // alert("Your email has been registered");
             } else {
                 let response = await fetch(endpoint, options);
                 console.log(response.json());
-                alert("You have been registered succesfully");
-                window.location.href = "login.html";
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "You have been registered succesfully",
+                    showConfirmButton: true,
+                    // timer: 5000,
+                });
+                // alert("You have been registered succesfully");
+                let ok = document.querySelector(".swal2-confirm");
+                ok.addEventListener("click", function () {
+                    window.location.href = "/login.html";
+                });
+                // window.location.href = "login.html";
             }
         } else {
             Swal.fire({
