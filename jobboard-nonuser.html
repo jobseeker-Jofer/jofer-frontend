@@ -1,94 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Job Board | Jofer: Get Your Offers with Jofer</title>
 
-    <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
-    />
-    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pangolin&display=swap" rel="stylesheet">
-    <!-- FRONT CSS -->
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <!-- <link rel="stylesheet" href="/styles/sidebar.css" /> -->
-    <link rel="stylesheet" href="/styles/jobboard.css">
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
-            <img src="/img/brand.png" alt="" />
-        </a>
-        <div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="/login.html" id="menu">
-                        <i class="fas fa-sign-in-alt"></i> Sign In
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- END NAVBAR -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Jofer</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/" />
+  <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pangolin&display=swap" rel="stylesheet">
+  <!-- FRONT CSS -->
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <!-- <link rel="stylesheet" href="/styles/sidebar.css" /> -->
+  <link rel="stylesheet" href="/styles/jobboard.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="./index.html">
+      <img src="/img/brand.png" alt="" />
+    </a>
+    <div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="/login.html" id="menu">
+            <i class="fas fa-sign-in-alt"></i> Sign In
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
 
   <!-- MAIN PAGE -->
-    <div class="container-fluid">
-        <!-- JOB SEARCH: JUMBOTRON -->
-        <section class="jumbotron text-center">
-            <div class="container">
-              <h1>Album example</h1>
-              <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-              <p>
-                <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-              </p>
+  <div class="container-fluid">
+    <!-- JOB SEARCH: JUMBOTRON -->
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
+          etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </section>
+    <!-- JOB SEARCH: SEARCH BAR -->
+    <section class="search-sec">
+      <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+          <div class="row">
+            <div class="col-lg-8 col-md-3 col-sm-12 p-0">
+              <input type="text" class="form-control search-slt" placeholder="Enter Job Title" id="search" />
             </div>
-          </section>
-          <!-- JOB SEARCH: SEARCH BAR -->
-          <section class="search-sec">
-            <div class="container">
-              <form action="#" method="post" novalidate="novalidate">
-                <div class="row">
-                  <div class="col-lg-8 col-md-3 col-sm-12 p-0">
-                    <input
-                    type="text"
-                    class="form-control search-slt"
-                    placeholder="Enter Job Title"
-                    id="search"
-                    />
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                    <button
-                    type="button"
-                    class="btn btn-danger wrn-btn"
-                    id="button"
-                    >Search
-                    </button>
-                  </div>
-                </div>
-              </form>
+            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+              <button type="button" class="btn btn-danger wrn-btn" id="button">Search
+              </button>
             </div>
-          </section>
-          <!-- JOB SEARCH: JOB LIST -->
-          <div class="album py-5 bg-light">
-            <div class="container">
-              <div class="col">
-                <div class="col-md-10">
-                  <ul class="list-unstyled">
-                    <!-- <li class="media">
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- JOB SEARCH: JOB LIST -->
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="col">
+          <div class="col-md-10">
+            <ul class="list-unstyled">
+              <!-- <li class="media">
                       <img src="/img/zenius-list.png" class="mr-3" alt="...">
                       <div class="media-body">
                         <h5 class="mt-0 mb-1">List-based media object</h5>
@@ -102,7 +86,7 @@
                         </div>
                       </div>
                     </li> -->
-                    <!--
+              <!--
                     <li class="media my-4">
                       <img src="/img/ibm-list.png" class="mr-3" alt="...">
                       <div class="media-body">
@@ -129,17 +113,15 @@
                         </div>
                       </div>
                     </li> -->
-                  </ul>
-                </div>
-              </div>
-            </div>
+            </ul>
           </div>
+        </div>
+      </div>
+    </div>
     <!-- bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <script>
       window.jQuery ||
         document.write(
@@ -153,5 +135,6 @@
     <!-- <script src="/script/navbar.js"></script> -->
     <!-- <script src="/script/sidebar.js"></script> -->
     <script src="/script/jobboard.js"></script>
-  </body>
+</body>
+
 </html>
