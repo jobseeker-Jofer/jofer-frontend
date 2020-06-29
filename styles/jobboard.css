@@ -38,6 +38,12 @@
         padding-bottom: 6rem;
     }
 }
+@media (max-width: 768px) {
+    .jumbotron {
+        background-size: 100vw;
+        height: 15vh;
+    }
+}
 
 .jumbotron p:last-child {
     margin-bottom: 0;
