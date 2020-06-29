@@ -470,6 +470,9 @@ hr {
 .button:hover {
     -webkit-animation: hover 1200ms linear 2 alternate;
     animation: hover 1200ms linear 2 alternate;
+    background: #143c61;
+    text-decoration: none;
+    color: #61b4d9;
 }
 
 /* Active state animation applied here */
