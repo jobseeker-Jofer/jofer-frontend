@@ -1,97 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Jofer</title>
-    
-    <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-    <!-- <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Jofer</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <!-- <link
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/dashboard/"
     /> -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pangolin&display=swap" rel="stylesheet">
-    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
-    <!-- FRONT CSS -->
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="/styles/sidebar.css" />
-    <link rel="stylesheet" href="/styles/dashboard.css">
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
-      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"
-      >
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pangolin&display=swap" rel="stylesheet">
+  <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- FRONT CSS -->
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/sidebar.css" />
+  <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar sticky-top p-0 shadow flex-md-wrap">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
       <img src="/img/brand.png" alt="">
-      </a
-    >
-      <div>
-        <ul class="nav justify-content-end" >
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="menu"></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- END NAVBAR -->
+    </a>
+    <div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="menu"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
 
   <!-- MAIN PAGE -->
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Sidebar here -->
-        <nav
-          id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
-        >
-          <div class="sidebar-sticky pt-3">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" id="dashboard" href="/dashboard.html">
-                  <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="profile" href="/profile.html">
-                  <span data-feather="user"></span>
-                  Profile <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="jobboard" href="/jobboard.html">
-                  <span data-feather="search"></span>
-                  Job Board
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" id="signout">
-                    <span data-feather="log-out"></span>
-                    Sign Out
-                </a>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar here -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" id="dashboard" href="/dashboard.html">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
             </li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" id="profile" href="/profile.html">
+                <span data-feather="user"></span>
+                Profile <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="jobboard" href="/jobboard.html">
+                <span data-feather="search"></span>
+                Job Board
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="signout">
+                <span data-feather="log-out"></span>
+                Sign Out
+              </a>
+            </li>
+          </ul>
 
-            <h6
-              class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
-            >
-              <!-- <span>Saved Jobs</span>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <!-- <span>Saved Jobs</span>
               <a
                 class="d-flex align-items-center text-muted"
                 href="#"
@@ -124,145 +112,123 @@
                 </a>
               </li>
             </ul> -->
-          </div>
-        </nav>
-        <!-- END SIDEBAR -->
+        </div>
+      </nav>
+      <!-- END SIDEBAR -->
 
-        <!-- PROFILE -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <div class="team-single">
-            
-            <div class="row">
-              <div class="col-lg-4 col-md-5 xs-margin-30px-bottom user-profile">
-                <div class="team-single-img">
-                  <img
-                    src="/img/user.png"
-                    alt="user"
-                    id="user-photo"
-                  />
-                </div>
-                <div
-                  class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center"
-                >
-                  <h4
-                    class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600" id="title"
-                  >
-                    Title
-                  </h4>
-                  <p class="sm-width-95 sm-margin-auto" id="desc">
-                    Description
-                  </p>
-                </div>
+      <!-- PROFILE -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="team-single">
+
+          <div class="row">
+            <div class="col-lg-4 col-md-5 xs-margin-30px-bottom user-profile">
+              <div class="team-single-img">
+                <img src="/img/user.png" alt="user" id="user-photo" />
               </div>
-              <div class="col-lg-8 col-md-7">
-                <div class="team-single-text padding-50px-left sm-no-padding-left">
-                  <div class="contact-info-section margin-40px-tb">
-                    <h4 class="font-size38 sm-font-size32 xs-font-size30" id="name">
-                      User Name
-                    </h4>
-                    <ul class="list-style9 no-margin data-user">
-                      <li>
-                        <div class="row">
-                          <div class="col-md-5 col-5">
-                            <i class="fas fa-compass color-list"></i>
-                            <strong class="margin-10px-left color-list"
-                              >Residence:</strong
-                            >
-                          </div>
-                          <div class="col-md-7 col-7">
-                            <p id="residence">City, Indonesia</p>
-                          </div>
+              <div class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center">
+                <h4 class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600" id="title">
+                  Title
+                </h4>
+                <p class="sm-width-95 sm-margin-auto" id="desc">
+                  Description
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+              <div class="team-single-text padding-50px-left sm-no-padding-left">
+                <div class="contact-info-section margin-40px-tb">
+                  <h4 class="font-size38 sm-font-size32 xs-font-size30" id="name">
+                    User Name
+                  </h4>
+                  <ul class="list-style9 no-margin data-user">
+                    <li>
+                      <div class="row">
+                        <div class="col-md-5 col-5">
+                          <i class="fas fa-compass color-list"></i>
+                          <strong class="margin-10px-left color-list">Residence:</strong>
                         </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-md-5 col-5">
-                            <i class="fas fa-birthday-cake color-list"></i>
-                            <strong class="margin-10px-left color-list"
-                              >Birthday:</strong
-                            >
-                          </div>
-                          <div class="col-md-7 col-7">
-                            <p id="birthday">Month</p>
-                          </div>
+                        <div class="col-md-7 col-7">
+                          <p id="residence">City, Indonesia</p>
                         </div>
-                      </li>                      
-                      <li>
-                        <div class="row">
-                          <div class="col-md-5 col-5">
-                            <i class="fas fa-mobile-alt color-list"></i>
-                            <strong
-                              class="margin-10px-left xs-margin-four-left color-list"
-                              >Phone:</strong
-                            >
-                          </div>
-                          <div class="col-md-7 col-7">
-                            <p id="contact">Phone number</p>
-                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-md-5 col-5">
+                          <i class="fas fa-birthday-cake color-list"></i>
+                          <strong class="margin-10px-left color-list">Birthday:</strong>
                         </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-md-5 col-5">
-                            <i class="fas fa-envelope color-list"></i>
-                            <strong
-                              class="margin-10px-left xs-margin-four-left color-list"
-                              >Email:</strong
-                            >
-                          </div>
-                          <div class="col-md-7 col-7">
-                            <p>
-                              <a href="javascript:void(0)" id="email">addyour@emailhere</a>
-                            </p>
-                          </div>
+                        <div class="col-md-7 col-7">
+                          <p id="birthday">Month</p>
                         </div>
-                      </li>
-                      <li>
-                        <div class="row">
-                          <div class="col-md-5 col-5">
-                            <i class="fas fa-toolbox color-list"></i>
-                            <strong
-                              class="margin-10px-left xs-margin-four-left color-list"
-                              >Skills:</strong
-                            >
-                          </div>
-                          <div class="col-md-7 col-7">
-                            <p id="skills">
-                              list skills
-                            </p>
-                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-md-5 col-5">
+                          <i class="fas fa-mobile-alt color-list"></i>
+                          <strong class="margin-10px-left xs-margin-four-left color-list">Phone:</strong>
                         </div>
-                      </li>
-                    </ul>
-                  </div>
+                        <div class="col-md-7 col-7">
+                          <p id="contact">Phone number</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-md-5 col-5">
+                          <i class="fas fa-envelope color-list"></i>
+                          <strong class="margin-10px-left xs-margin-four-left color-list">Email:</strong>
+                        </div>
+                        <div class="col-md-7 col-7">
+                          <p>
+                            <a href="javascript:void(0)" id="email">addyour@emailhere</a>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-md-5 col-5">
+                          <i class="fas fa-toolbox color-list"></i>
+                          <strong class="margin-10px-left xs-margin-four-left color-list">Skills:</strong>
+                        </div>
+                        <div class="col-md-7 col-7">
+                          <p id="skills">
+                            list skills
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-        </main>
-        <!-- END PROFILE -->
-      </div>
+        </div>
+      </main>
+      <!-- END PROFILE -->
     </div>
+  </div>
 
-    <!-- bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
-        );
-    </script>
-    <script src="../assets/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script>
+    window.jQuery ||
+      document.write(
+        '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
+      );
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
-    <!-- BACK-END -->
-    <script src="/script/navbar.js"></script>
-    <script src="/script/sidebar.js"></script>
-    <script src="/script/dashboard.js"></script>
-  </body>
+  <!-- BACK-END -->
+  <script src="/script/navbar.js"></script>
+  <script src="/script/sidebar.js"></script>
+  <script src="/script/dashboard.js"></script>
+</body>
+
 </html>
