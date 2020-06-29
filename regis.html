@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/regis.css" />
-    <title>Sign-up | Jofer: Offering You JOB!</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/regis.css" />
+        <title>Sign-up | Jofer: Get Your Offers with Jofer</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
 
-  <body>
-    <!-- start register  -->
-    <section>
-      <div class="container">
-        <div class="user signupBx">
-          <div class="formBx">
-            <form>
-              <h2>Create an Account</h2>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Full Name"
-              />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email address"
-              />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Create Password"
-              />
-              <!-- <input
-                      type="password"
-                      name="confirm-password"
-                      placeholder="Confirm Password"
-                    /> -->
-              <input type="button" name="signup" id="signup" value="Sign Up" />
-              <p class="signup">
-                Already have an account ?
-                <a href="login.html">Sign in</a>
-              </p>
-            </form>
-          </div>
-          <div class="imgBx">
-            <img src="https://blush.ly/D_pgryrJp/p?bg=66b8da" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End register -->
-    <script src="/script/regis.js"></script>
-  </body>
+    <body>
+        <!-- start register  -->
+        <section>
+            <div class="container" data-aos="fade-left">
+                <div class="user signupBx">
+                    <div class="formBx">
+                        <form>
+                            <h2>Create an Account</h2>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Full Name"
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Email address"
+                            />
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                placeholder="Create Password"
+                            />
+                            <input
+                                type="button"
+                                name="signup"
+                                id="signup"
+                                value="Sign Up"
+                            />
+                            <p class="signup">
+                                Already have an account ?
+                                <a href="login.html">Sign in</a>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="imgBx">
+                        <img
+                            src="https://blush.ly/D_pgryrJp/p?bg=66b8da"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End register -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="/script/regis.js"></script>
+    </body>
 </html>
