@@ -1,4 +1,11 @@
 let menu = document.getElementById("menu");
+// // SIDEBAR
+let signoutNav = document.getElementById("signoutNav");
+// -------- EVENT LISTENER ----------
+signoutNav.addEventListener("click", function () {
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+});
 
 // --------------- FUNCTION ----------------
 async function getUser() {
